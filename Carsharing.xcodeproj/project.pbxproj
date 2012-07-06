@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78247183153866CA0024AAE5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78247182153866CA0024AAE5 /* Security.framework */; };
+		782471D1153888EA0024AAE5 /* MQCarLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 782471D0153888EA0024AAE5 /* MQCarLocationProvider.m */; };
+		782471D4153888FC0024AAE5 /* MQCar2GoLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 782471D3153888FC0024AAE5 /* MQCar2GoLocationProvider.m */; };
+		782471D715388A5F0024AAE5 /* MQCar2GoCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 782471D615388A5F0024AAE5 /* MQCar2GoCar.m */; };
+		782471DA15388CA50024AAE5 /* MQDriveNowLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 782471D915388CA50024AAE5 /* MQDriveNowLocationProvider.m */; };
+		782471DF15388FDB0024AAE5 /* Car2Go.png in Resources */ = {isa = PBXBuildFile; fileRef = 782471DD15388FDB0024AAE5 /* Car2Go.png */; };
+		782471E015388FDB0024AAE5 /* Car2Go@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 782471DE15388FDB0024AAE5 /* Car2Go@2x.png */; };
+		782471E31538907A0024AAE5 /* DriveNow.png in Resources */ = {isa = PBXBuildFile; fileRef = 782471E11538907A0024AAE5 /* DriveNow.png */; };
+		782471E41538907A0024AAE5 /* DriveNow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 782471E21538907A0024AAE5 /* DriveNow@2x.png */; };
+		782471E7153893780024AAE5 /* DriveNow1er.png in Resources */ = {isa = PBXBuildFile; fileRef = 782471E5153893780024AAE5 /* DriveNow1er.png */; };
+		782471E8153893780024AAE5 /* DriveNow1er@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 782471E6153893780024AAE5 /* DriveNow1er@2x.png */; };
+		782773F9154AA48500397B16 /* Location.png in Resources */ = {isa = PBXBuildFile; fileRef = 782773F7154AA48500397B16 /* Location.png */; };
+		782773FA154AA48500397B16 /* Location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 782773F8154AA48500397B16 /* Location@2x.png */; };
+		7852C0A615346CCC007A8609 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0A515346CCC007A8609 /* UIKit.framework */; };
+		7852C0A815346CCC007A8609 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0A715346CCC007A8609 /* Foundation.framework */; };
+		7852C0AA15346CCC007A8609 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0A915346CCC007A8609 /* CoreGraphics.framework */; };
+		7852C0B015346CCC007A8609 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7852C0AE15346CCC007A8609 /* InfoPlist.strings */; };
+		7852C0B215346CCC007A8609 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0B115346CCC007A8609 /* main.m */; };
+		7852C0B615346CCC007A8609 /* MQCarsharingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0B515346CCC007A8609 /* MQCarsharingAppDelegate.m */; };
+		7852C0B915346CCC007A8609 /* MQCarMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0B815346CCC007A8609 /* MQCarMapViewController.m */; };
+		7852C0BC15346CCC007A8609 /* MQCarMapViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7852C0BA15346CCC007A8609 /* MQCarMapViewController~iphone.xib */; };
+		7852C0E915346DBF007A8609 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0E815346DBF007A8609 /* CFNetwork.framework */; };
+		7852C0EB15346DC5007A8609 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0EA15346DC5007A8609 /* SystemConfiguration.framework */; };
+		7852C0ED15346DCC007A8609 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0EC15346DCC007A8609 /* MobileCoreServices.framework */; };
+		7852C0EF15346DD9007A8609 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0EE15346DD9007A8609 /* libz.dylib */; };
+		7852C10A15346F06007A8609 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0F215346F06007A8609 /* NSObject+SBJson.m */; };
+		7852C10B15346F06007A8609 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0F515346F06007A8609 /* SBJsonParser.m */; };
+		7852C10C15346F06007A8609 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0F715346F06007A8609 /* SBJsonStreamParser.m */; };
+		7852C10D15346F06007A8609 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0F915346F06007A8609 /* SBJsonStreamParserAccumulator.m */; };
+		7852C10E15346F06007A8609 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0FB15346F06007A8609 /* SBJsonStreamParserAdapter.m */; };
+		7852C10F15346F06007A8609 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0FD15346F06007A8609 /* SBJsonStreamParserState.m */; };
+		7852C11015346F06007A8609 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0FF15346F06007A8609 /* SBJsonStreamWriter.m */; };
+		7852C11115346F06007A8609 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C10115346F06007A8609 /* SBJsonStreamWriterAccumulator.m */; };
+		7852C11215346F06007A8609 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C10315346F06007A8609 /* SBJsonStreamWriterState.m */; };
+		7852C11315346F06007A8609 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C10515346F06007A8609 /* SBJsonTokeniser.m */; };
+		7852C11415346F06007A8609 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C10715346F06007A8609 /* SBJsonUTF8Stream.m */; };
+		7852C11515346F06007A8609 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C10915346F06007A8609 /* SBJsonWriter.m */; };
+		7852C119153471A6007A8609 /* MQCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C118153471A6007A8609 /* MQCar.m */; };
+		7852C11C153471E7007A8609 /* MQDriveNowCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C11B153471E7007A8609 /* MQDriveNowCar.m */; };
+		7852C11E1534730B007A8609 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C11D1534730B007A8609 /* MapKit.framework */; };
+		7852C12015347318007A8609 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C11F15347318007A8609 /* CoreLocation.framework */; };
+		7886DC9F1593622400FD139D /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9B1593622400FD139D /* Icon-iPad.png */; };
+		7886DCA01593622400FD139D /* Icon-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9C1593622400FD139D /* Icon-iPad@2x.png */; };
+		7886DCA11593622400FD139D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9D1593622400FD139D /* Icon.png */; };
+		7886DCA21593622400FD139D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9E1593622400FD139D /* Icon@2x.png */; };
+		7886DCAB159362C200FD139D /* MQCarMapViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7886DCAA159362C200FD139D /* MQCarMapViewController~ipad.xib */; };
+		788AE58115A5F1E300320E60 /* Cars.png in Resources */ = {isa = PBXBuildFile; fileRef = 788AE57F15A5F1E300320E60 /* Cars.png */; };
+		788AE58215A5F1E300320E60 /* Cars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 788AE58015A5F1E300320E60 /* Cars@2x.png */; };
+		788AE59115A6E88C00320E60 /* MQCarAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE59015A6E88C00320E60 /* MQCarAnnotationView.m */; };
+		788AE5DC15A6F39F00320E60 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5C815A6F39F00320E60 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		788AE5DD15A6F39F00320E60 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5CA15A6F39F00320E60 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		788AE5DE15A6F39F00320E60 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5CC15A6F39F00320E60 /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		788AE5DF15A6F39F00320E60 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5CE15A6F39F00320E60 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		788AE5E015A6F39F00320E60 /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5D015A6F39F00320E60 /* AFJSONUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		788AE5E115A6F39F00320E60 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5D215A6F39F00320E60 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		788AE5E215A6F39F00320E60 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5D515A6F39F00320E60 /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		788AE5E315A6F39F00320E60 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5D715A6F39F00320E60 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		788AE5E415A6F39F00320E60 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5D915A6F39F00320E60 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		788AE5E515A6F39F00320E60 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5DB15A6F39F00320E60 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		78247182153866CA0024AAE5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		782471CF153888EA0024AAE5 /* MQCarLocationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQCarLocationProvider.h; sourceTree = "<group>"; };
+		782471D0153888EA0024AAE5 /* MQCarLocationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQCarLocationProvider.m; sourceTree = "<group>"; };
+		782471D2153888FB0024AAE5 /* MQCar2GoLocationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQCar2GoLocationProvider.h; sourceTree = "<group>"; };
+		782471D3153888FC0024AAE5 /* MQCar2GoLocationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQCar2GoLocationProvider.m; sourceTree = "<group>"; };
+		782471D515388A5F0024AAE5 /* MQCar2GoCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQCar2GoCar.h; sourceTree = "<group>"; };
+		782471D615388A5F0024AAE5 /* MQCar2GoCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQCar2GoCar.m; sourceTree = "<group>"; };
+		782471D815388CA50024AAE5 /* MQDriveNowLocationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQDriveNowLocationProvider.h; sourceTree = "<group>"; };
+		782471D915388CA50024AAE5 /* MQDriveNowLocationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQDriveNowLocationProvider.m; sourceTree = "<group>"; };
+		782471DD15388FDB0024AAE5 /* Car2Go.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Car2Go.png; sourceTree = "<group>"; };
+		782471DE15388FDB0024AAE5 /* Car2Go@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Car2Go@2x.png"; sourceTree = "<group>"; };
+		782471E11538907A0024AAE5 /* DriveNow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DriveNow.png; sourceTree = "<group>"; };
+		782471E21538907A0024AAE5 /* DriveNow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DriveNow@2x.png"; sourceTree = "<group>"; };
+		782471E5153893780024AAE5 /* DriveNow1er.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DriveNow1er.png; sourceTree = "<group>"; };
+		782471E6153893780024AAE5 /* DriveNow1er@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DriveNow1er@2x.png"; sourceTree = "<group>"; };
+		782773F7154AA48500397B16 /* Location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Location.png; sourceTree = "<group>"; };
+		782773F8154AA48500397B16 /* Location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Location@2x.png"; sourceTree = "<group>"; };
+		7852C0A115346CCC007A8609 /* Carsharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carsharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7852C0A515346CCC007A8609 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7852C0A715346CCC007A8609 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7852C0A915346CCC007A8609 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7852C0AD15346CCC007A8609 /* Carsharing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Carsharing-Info.plist"; sourceTree = "<group>"; };
+		7852C0AF15346CCC007A8609 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7852C0B115346CCC007A8609 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7852C0B315346CCC007A8609 /* Carsharing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Carsharing-Prefix.pch"; sourceTree = "<group>"; };
+		7852C0B415346CCC007A8609 /* MQCarsharingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MQCarsharingAppDelegate.h; sourceTree = "<group>"; };
+		7852C0B515346CCC007A8609 /* MQCarsharingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQCarsharingAppDelegate.m; sourceTree = "<group>"; };
+		7852C0B715346CCC007A8609 /* MQCarMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MQCarMapViewController.h; sourceTree = "<group>"; };
+		7852C0B815346CCC007A8609 /* MQCarMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQCarMapViewController.m; sourceTree = "<group>"; };
+		7852C0BB15346CCC007A8609 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/MQCarMapViewController~iphone.xib"; sourceTree = "<group>"; };
+		7852C0E815346DBF007A8609 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7852C0EA15346DC5007A8609 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7852C0EC15346DCC007A8609 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7852C0EE15346DD9007A8609 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7852C0F115346F06007A8609 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		7852C0F215346F06007A8609 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		7852C0F315346F06007A8609 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		7852C0F415346F06007A8609 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		7852C0F515346F06007A8609 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		7852C0F615346F06007A8609 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		7852C0F715346F06007A8609 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		7852C0F815346F06007A8609 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		7852C0F915346F06007A8609 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		7852C0FA15346F06007A8609 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		7852C0FB15346F06007A8609 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		7852C0FC15346F06007A8609 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		7852C0FD15346F06007A8609 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		7852C0FE15346F06007A8609 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		7852C0FF15346F06007A8609 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		7852C10015346F06007A8609 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		7852C10115346F06007A8609 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		7852C10215346F06007A8609 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		7852C10315346F06007A8609 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		7852C10415346F06007A8609 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		7852C10515346F06007A8609 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		7852C10615346F06007A8609 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		7852C10715346F06007A8609 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		7852C10815346F06007A8609 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		7852C10915346F06007A8609 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		7852C117153471A6007A8609 /* MQCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQCar.h; sourceTree = "<group>"; };
+		7852C118153471A6007A8609 /* MQCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQCar.m; sourceTree = "<group>"; };
+		7852C11A153471E7007A8609 /* MQDriveNowCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQDriveNowCar.h; sourceTree = "<group>"; };
+		7852C11B153471E7007A8609 /* MQDriveNowCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQDriveNowCar.m; sourceTree = "<group>"; };
+		7852C11D1534730B007A8609 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7852C11F15347318007A8609 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7855D5D31562CEA0000BCCDB /* Carsharing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Carsharing.entitlements; sourceTree = "<group>"; };
+		7886DC9B1593622400FD139D /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
+		7886DC9C1593622400FD139D /* Icon-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad@2x.png"; sourceTree = "<group>"; };
+		7886DC9D1593622400FD139D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		7886DC9E1593622400FD139D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		7886DCAA159362C200FD139D /* MQCarMapViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MQCarMapViewController~ipad.xib"; path = "en.lproj/MQCarMapViewController~ipad.xib"; sourceTree = "<group>"; };
+		788AE57F15A5F1E300320E60 /* Cars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cars.png; sourceTree = "<group>"; };
+		788AE58015A5F1E300320E60 /* Cars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cars@2x.png"; sourceTree = "<group>"; };
+		788AE58F15A6E88C00320E60 /* MQCarAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQCarAnnotationView.h; sourceTree = "<group>"; };
+		788AE59015A6E88C00320E60 /* MQCarAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQCarAnnotationView.m; sourceTree = "<group>"; };
+		788AE5C715A6F39F00320E60 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		788AE5C815A6F39F00320E60 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		788AE5C915A6F39F00320E60 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		788AE5CA15A6F39F00320E60 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		788AE5CB15A6F39F00320E60 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		788AE5CC15A6F39F00320E60 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		788AE5CD15A6F39F00320E60 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		788AE5CE15A6F39F00320E60 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		788AE5CF15A6F39F00320E60 /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONUtilities.h; sourceTree = "<group>"; };
+		788AE5D015A6F39F00320E60 /* AFJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONUtilities.m; sourceTree = "<group>"; };
+		788AE5D115A6F39F00320E60 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		788AE5D215A6F39F00320E60 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		788AE5D315A6F39F00320E60 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		788AE5D415A6F39F00320E60 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		788AE5D515A6F39F00320E60 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		788AE5D615A6F39F00320E60 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		788AE5D715A6F39F00320E60 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		788AE5D815A6F39F00320E60 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		788AE5D915A6F39F00320E60 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		788AE5DA15A6F39F00320E60 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		788AE5DB15A6F39F00320E60 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7852C09E15346CCC007A8609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78247183153866CA0024AAE5 /* Security.framework in Frameworks */,
+				7852C12015347318007A8609 /* CoreLocation.framework in Frameworks */,
+				7852C11E1534730B007A8609 /* MapKit.framework in Frameworks */,
+				7852C0EF15346DD9007A8609 /* libz.dylib in Frameworks */,
+				7852C0AA15346CCC007A8609 /* CoreGraphics.framework in Frameworks */,
+				7852C0ED15346DCC007A8609 /* MobileCoreServices.framework in Frameworks */,
+				7852C0EB15346DC5007A8609 /* SystemConfiguration.framework in Frameworks */,
+				7852C0E915346DBF007A8609 /* CFNetwork.framework in Frameworks */,
+				7852C0A615346CCC007A8609 /* UIKit.framework in Frameworks */,
+				7852C0A815346CCC007A8609 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7824718915386A060024AAE5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				782471CF153888EA0024AAE5 /* MQCarLocationProvider.h */,
+				782471D0153888EA0024AAE5 /* MQCarLocationProvider.m */,
+				782471D2153888FB0024AAE5 /* MQCar2GoLocationProvider.h */,
+				782471D3153888FC0024AAE5 /* MQCar2GoLocationProvider.m */,
+				782471D815388CA50024AAE5 /* MQDriveNowLocationProvider.h */,
+				782471D915388CA50024AAE5 /* MQDriveNowLocationProvider.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7852C09615346CCC007A8609 = {
+			isa = PBXGroup;
+			children = (
+				7852C0AB15346CCC007A8609 /* Carsharing */,
+				7852C0A415346CCC007A8609 /* Frameworks */,
+				7852C0A215346CCC007A8609 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7852C0A215346CCC007A8609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7852C0A115346CCC007A8609 /* Carsharing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7852C0A415346CCC007A8609 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78247182153866CA0024AAE5 /* Security.framework */,
+				7852C11F15347318007A8609 /* CoreLocation.framework */,
+				7852C11D1534730B007A8609 /* MapKit.framework */,
+				7852C0EE15346DD9007A8609 /* libz.dylib */,
+				7852C0EC15346DCC007A8609 /* MobileCoreServices.framework */,
+				7852C0EA15346DC5007A8609 /* SystemConfiguration.framework */,
+				7852C0E815346DBF007A8609 /* CFNetwork.framework */,
+				7852C0A515346CCC007A8609 /* UIKit.framework */,
+				7852C0A715346CCC007A8609 /* Foundation.framework */,
+				7852C0A915346CCC007A8609 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7852C0AB15346CCC007A8609 /* Carsharing */ = {
+			isa = PBXGroup;
+			children = (
+				7824718915386A060024AAE5 /* Controller */,
+				7852C11615347194007A8609 /* Model */,
+				7852C0B415346CCC007A8609 /* MQCarsharingAppDelegate.h */,
+				7852C0B515346CCC007A8609 /* MQCarsharingAppDelegate.m */,
+				7852C0B715346CCC007A8609 /* MQCarMapViewController.h */,
+				7852C0B815346CCC007A8609 /* MQCarMapViewController.m */,
+				788AE58F15A6E88C00320E60 /* MQCarAnnotationView.h */,
+				788AE59015A6E88C00320E60 /* MQCarAnnotationView.m */,
+				7852C0BA15346CCC007A8609 /* MQCarMapViewController~iphone.xib */,
+				7886DCAA159362C200FD139D /* MQCarMapViewController~ipad.xib */,
+				7852C0F015346F06007A8609 /* SBJson */,
+				788AE5C615A6F39F00320E60 /* AFNetworking */,
+				7852C0AC15346CCC007A8609 /* Supporting Files */,
+			);
+			path = Carsharing;
+			sourceTree = "<group>";
+		};
+		7852C0AC15346CCC007A8609 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7855D5D31562CEA0000BCCDB /* Carsharing.entitlements */,
+				7886DC9B1593622400FD139D /* Icon-iPad.png */,
+				7886DC9C1593622400FD139D /* Icon-iPad@2x.png */,
+				7886DC9D1593622400FD139D /* Icon.png */,
+				7886DC9E1593622400FD139D /* Icon@2x.png */,
+				782471DD15388FDB0024AAE5 /* Car2Go.png */,
+				782471DE15388FDB0024AAE5 /* Car2Go@2x.png */,
+				788AE57F15A5F1E300320E60 /* Cars.png */,
+				788AE58015A5F1E300320E60 /* Cars@2x.png */,
+				782471E11538907A0024AAE5 /* DriveNow.png */,
+				782471E21538907A0024AAE5 /* DriveNow@2x.png */,
+				782471E5153893780024AAE5 /* DriveNow1er.png */,
+				782471E6153893780024AAE5 /* DriveNow1er@2x.png */,
+				782773F7154AA48500397B16 /* Location.png */,
+				782773F8154AA48500397B16 /* Location@2x.png */,
+				7852C0AD15346CCC007A8609 /* Carsharing-Info.plist */,
+				7852C0AE15346CCC007A8609 /* InfoPlist.strings */,
+				7852C0B115346CCC007A8609 /* main.m */,
+				7852C0B315346CCC007A8609 /* Carsharing-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7852C0F015346F06007A8609 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				7852C0F115346F06007A8609 /* NSObject+SBJson.h */,
+				7852C0F215346F06007A8609 /* NSObject+SBJson.m */,
+				7852C0F315346F06007A8609 /* SBJson.h */,
+				7852C0F415346F06007A8609 /* SBJsonParser.h */,
+				7852C0F515346F06007A8609 /* SBJsonParser.m */,
+				7852C0F615346F06007A8609 /* SBJsonStreamParser.h */,
+				7852C0F715346F06007A8609 /* SBJsonStreamParser.m */,
+				7852C0F815346F06007A8609 /* SBJsonStreamParserAccumulator.h */,
+				7852C0F915346F06007A8609 /* SBJsonStreamParserAccumulator.m */,
+				7852C0FA15346F06007A8609 /* SBJsonStreamParserAdapter.h */,
+				7852C0FB15346F06007A8609 /* SBJsonStreamParserAdapter.m */,
+				7852C0FC15346F06007A8609 /* SBJsonStreamParserState.h */,
+				7852C0FD15346F06007A8609 /* SBJsonStreamParserState.m */,
+				7852C0FE15346F06007A8609 /* SBJsonStreamWriter.h */,
+				7852C0FF15346F06007A8609 /* SBJsonStreamWriter.m */,
+				7852C10015346F06007A8609 /* SBJsonStreamWriterAccumulator.h */,
+				7852C10115346F06007A8609 /* SBJsonStreamWriterAccumulator.m */,
+				7852C10215346F06007A8609 /* SBJsonStreamWriterState.h */,
+				7852C10315346F06007A8609 /* SBJsonStreamWriterState.m */,
+				7852C10415346F06007A8609 /* SBJsonTokeniser.h */,
+				7852C10515346F06007A8609 /* SBJsonTokeniser.m */,
+				7852C10615346F06007A8609 /* SBJsonUTF8Stream.h */,
+				7852C10715346F06007A8609 /* SBJsonUTF8Stream.m */,
+				7852C10815346F06007A8609 /* SBJsonWriter.h */,
+				7852C10915346F06007A8609 /* SBJsonWriter.m */,
+			);
+			path = SBJson;
+			sourceTree = SOURCE_ROOT;
+		};
+		7852C11615347194007A8609 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7852C117153471A6007A8609 /* MQCar.h */,
+				7852C118153471A6007A8609 /* MQCar.m */,
+				7852C11A153471E7007A8609 /* MQDriveNowCar.h */,
+				7852C11B153471E7007A8609 /* MQDriveNowCar.m */,
+				782471D515388A5F0024AAE5 /* MQCar2GoCar.h */,
+				782471D615388A5F0024AAE5 /* MQCar2GoCar.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		788AE5C615A6F39F00320E60 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				788AE5C715A6F39F00320E60 /* AFHTTPClient.h */,
+				788AE5C815A6F39F00320E60 /* AFHTTPClient.m */,
+				788AE5C915A6F39F00320E60 /* AFHTTPRequestOperation.h */,
+				788AE5CA15A6F39F00320E60 /* AFHTTPRequestOperation.m */,
+				788AE5CB15A6F39F00320E60 /* AFImageRequestOperation.h */,
+				788AE5CC15A6F39F00320E60 /* AFImageRequestOperation.m */,
+				788AE5CD15A6F39F00320E60 /* AFJSONRequestOperation.h */,
+				788AE5CE15A6F39F00320E60 /* AFJSONRequestOperation.m */,
+				788AE5CF15A6F39F00320E60 /* AFJSONUtilities.h */,
+				788AE5D015A6F39F00320E60 /* AFJSONUtilities.m */,
+				788AE5D115A6F39F00320E60 /* AFNetworkActivityIndicatorManager.h */,
+				788AE5D215A6F39F00320E60 /* AFNetworkActivityIndicatorManager.m */,
+				788AE5D315A6F39F00320E60 /* AFNetworking.h */,
+				788AE5D415A6F39F00320E60 /* AFPropertyListRequestOperation.h */,
+				788AE5D515A6F39F00320E60 /* AFPropertyListRequestOperation.m */,
+				788AE5D615A6F39F00320E60 /* AFURLConnectionOperation.h */,
+				788AE5D715A6F39F00320E60 /* AFURLConnectionOperation.m */,
+				788AE5D815A6F39F00320E60 /* AFXMLRequestOperation.h */,
+				788AE5D915A6F39F00320E60 /* AFXMLRequestOperation.m */,
+				788AE5DA15A6F39F00320E60 /* UIImageView+AFNetworking.h */,
+				788AE5DB15A6F39F00320E60 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7852C0A015346CCC007A8609 /* Carsharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7852C0BF15346CCC007A8609 /* Build configuration list for PBXNativeTarget "Carsharing" */;
+			buildPhases = (
+				7852C09D15346CCC007A8609 /* Sources */,
+				7852C09E15346CCC007A8609 /* Frameworks */,
+				7852C09F15346CCC007A8609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Carsharing;
+			productName = Carsharing;
+			productReference = 7852C0A115346CCC007A8609 /* Carsharing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7852C09815346CCC007A8609 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MQ;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = metaquark;
+			};
+			buildConfigurationList = 7852C09B15346CCC007A8609 /* Build configuration list for PBXProject "Carsharing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7852C09615346CCC007A8609;
+			productRefGroup = 7852C0A215346CCC007A8609 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7852C0A015346CCC007A8609 /* Carsharing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7852C09F15346CCC007A8609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7852C0B015346CCC007A8609 /* InfoPlist.strings in Resources */,
+				7852C0BC15346CCC007A8609 /* MQCarMapViewController~iphone.xib in Resources */,
+				782471DF15388FDB0024AAE5 /* Car2Go.png in Resources */,
+				782471E015388FDB0024AAE5 /* Car2Go@2x.png in Resources */,
+				782471E31538907A0024AAE5 /* DriveNow.png in Resources */,
+				782471E41538907A0024AAE5 /* DriveNow@2x.png in Resources */,
+				782471E7153893780024AAE5 /* DriveNow1er.png in Resources */,
+				782471E8153893780024AAE5 /* DriveNow1er@2x.png in Resources */,
+				782773F9154AA48500397B16 /* Location.png in Resources */,
+				782773FA154AA48500397B16 /* Location@2x.png in Resources */,
+				7886DC9F1593622400FD139D /* Icon-iPad.png in Resources */,
+				7886DCA01593622400FD139D /* Icon-iPad@2x.png in Resources */,
+				7886DCA11593622400FD139D /* Icon.png in Resources */,
+				7886DCA21593622400FD139D /* Icon@2x.png in Resources */,
+				7886DCAB159362C200FD139D /* MQCarMapViewController~ipad.xib in Resources */,
+				788AE58115A5F1E300320E60 /* Cars.png in Resources */,
+				788AE58215A5F1E300320E60 /* Cars@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7852C09D15346CCC007A8609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7852C0B215346CCC007A8609 /* main.m in Sources */,
+				7852C0B615346CCC007A8609 /* MQCarsharingAppDelegate.m in Sources */,
+				7852C0B915346CCC007A8609 /* MQCarMapViewController.m in Sources */,
+				7852C10A15346F06007A8609 /* NSObject+SBJson.m in Sources */,
+				7852C10B15346F06007A8609 /* SBJsonParser.m in Sources */,
+				7852C10C15346F06007A8609 /* SBJsonStreamParser.m in Sources */,
+				7852C10D15346F06007A8609 /* SBJsonStreamParserAccumulator.m in Sources */,
+				7852C10E15346F06007A8609 /* SBJsonStreamParserAdapter.m in Sources */,
+				7852C10F15346F06007A8609 /* SBJsonStreamParserState.m in Sources */,
+				7852C11015346F06007A8609 /* SBJsonStreamWriter.m in Sources */,
+				7852C11115346F06007A8609 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				7852C11215346F06007A8609 /* SBJsonStreamWriterState.m in Sources */,
+				7852C11315346F06007A8609 /* SBJsonTokeniser.m in Sources */,
+				7852C11415346F06007A8609 /* SBJsonUTF8Stream.m in Sources */,
+				7852C11515346F06007A8609 /* SBJsonWriter.m in Sources */,
+				7852C119153471A6007A8609 /* MQCar.m in Sources */,
+				7852C11C153471E7007A8609 /* MQDriveNowCar.m in Sources */,
+				782471D1153888EA0024AAE5 /* MQCarLocationProvider.m in Sources */,
+				782471D4153888FC0024AAE5 /* MQCar2GoLocationProvider.m in Sources */,
+				782471D715388A5F0024AAE5 /* MQCar2GoCar.m in Sources */,
+				782471DA15388CA50024AAE5 /* MQDriveNowLocationProvider.m in Sources */,
+				788AE59115A6E88C00320E60 /* MQCarAnnotationView.m in Sources */,
+				788AE5DC15A6F39F00320E60 /* AFHTTPClient.m in Sources */,
+				788AE5DD15A6F39F00320E60 /* AFHTTPRequestOperation.m in Sources */,
+				788AE5DE15A6F39F00320E60 /* AFImageRequestOperation.m in Sources */,
+				788AE5DF15A6F39F00320E60 /* AFJSONRequestOperation.m in Sources */,
+				788AE5E015A6F39F00320E60 /* AFJSONUtilities.m in Sources */,
+				788AE5E115A6F39F00320E60 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				788AE5E215A6F39F00320E60 /* AFPropertyListRequestOperation.m in Sources */,
+				788AE5E315A6F39F00320E60 /* AFURLConnectionOperation.m in Sources */,
+				788AE5E415A6F39F00320E60 /* AFXMLRequestOperation.m in Sources */,
+				788AE5E515A6F39F00320E60 /* UIImageView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7852C0AE15346CCC007A8609 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7852C0AF15346CCC007A8609 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7852C0BA15346CCC007A8609 /* MQCarMapViewController~iphone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7852C0BB15346CCC007A8609 /* en */,
+			);
+			name = "MQCarMapViewController~iphone.xib";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7852C0BD15346CCC007A8609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7852C0BE15346CCC007A8609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7852C0C015346CCC007A8609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Carsharing/Carsharing-Prefix.pch";
+				INFOPLIST_FILE = "Carsharing/Carsharing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/AFNetworking\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7852C0C115346CCC007A8609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Carsharing/Carsharing.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Carsharing/Carsharing-Prefix.pch";
+				INFOPLIST_FILE = "Carsharing/Carsharing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/AFNetworking\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7852C09B15346CCC007A8609 /* Build configuration list for PBXProject "Carsharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7852C0BD15346CCC007A8609 /* Debug */,
+				7852C0BE15346CCC007A8609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7852C0BF15346CCC007A8609 /* Build configuration list for PBXNativeTarget "Carsharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7852C0C015346CCC007A8609 /* Debug */,
+				7852C0C115346CCC007A8609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7852C09815346CCC007A8609 /* Project object */;
+}
