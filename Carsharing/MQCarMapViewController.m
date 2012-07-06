@@ -17,6 +17,7 @@
 
 @property (strong, nonatomic) NSArray *carProviders;
 @property (strong, nonatomic) NSDate *lastRefreshDate;
+@property (nonatomic) BOOL annotationsDisplayed;
 
 @end
 
@@ -27,6 +28,7 @@
 @synthesize carProviders = _carProviders;
 @synthesize lastRefreshDate = _lastRefreshDate;
 @synthesize alertedCar = _alertedCar;
+@synthesize annotationsDisplayed=_annotationsDisplayed;
 
 - (void)viewDidLoad
 {
@@ -72,11 +74,13 @@
     __block NSMutableArray *remainingProviders = [NSMutableArray arrayWithArray:self.carProviders];
     __block BOOL displayedError = NO;
     for (MQCarLocationProvider *provider in self.carProviders) {
-        [self.mapView removeAnnotations:provider.displayedCars];
+        if (self.annotationsDisplayed) 
+            [self.mapView removeAnnotations:provider.displayedCars];
         provider.displayedCars = nil;
         [provider refreshLocationsWithResultBlock:^(NSArray *cars) {
             provider.displayedCars = cars;
-            [self.mapView addAnnotations:cars];  
+            if (self.annotationsDisplayed) 
+                [self.mapView addAnnotations:cars];  
             
             [remainingProviders removeObject:provider];
             if ([remainingProviders count] == 0)
@@ -119,6 +123,24 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated
+{
+    MKCoordinateRegion region = self.mapView.region;
+    CLLocationDistance minSpan = MIN(region.span.latitudeDelta, region.span.longitudeDelta * cos(region.center.latitude / 180 * M_PI)) * 111000;
+    BOOL shouldDisplayAnnotations = minSpan < 4000;
+    if (shouldDisplayAnnotations != self.annotationsDisplayed) {
+        if (shouldDisplayAnnotations) {
+            for (MQCarLocationProvider *provider in self.carProviders)
+                [self.mapView addAnnotations:provider.displayedCars];            
+        }
+        else {
+            for (MQCarLocationProvider *provider in self.carProviders)
+                [self.mapView removeAnnotations:provider.displayedCars];
+        }
+        self.annotationsDisplayed = shouldDisplayAnnotations;
+    }
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation

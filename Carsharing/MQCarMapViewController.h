@@ -16,6 +16,7 @@
 @property (nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic) IBOutlet UILabel *statusLabel;
 @property (nonatomic) MQCar *alertedCar;
+@property (nonatomic, readonly) BOOL annotationsDisplayed;
 
 - (IBAction)centerUserLocation:(id)sender;
 - (IBAction)refreshIfNeccessary;
