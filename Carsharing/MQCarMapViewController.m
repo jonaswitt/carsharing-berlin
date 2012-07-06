@@ -57,7 +57,6 @@
     CLLocationManager *locationManager = [[CLLocationManager alloc] init];
     if (locationManager.location)
         [self.mapView setRegion:MKCoordinateRegionMakeWithDistance(locationManager.location.coordinate, 600, 600) animated:YES];
-    self.mapView.userTrackingMode = MKUserTrackingModeFollow;
 }
 
 - (IBAction)refreshIfNeccessary
