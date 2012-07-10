@@ -21,7 +21,7 @@
         client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"https://www.drive-now.com/php/metropolis/"]];
     }
     
-    NSString *path = @"vehicle_filter";
+    NSString *path = @"json.vehicle_filter";
     [client cancelAllHTTPOperationsWithMethod:@"POST" path:path];
     [client postPath:path parameters:[NSDictionary dictionaryWithObjectsAndKeys:@"6099", @"cit", nil] success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (resultBlock) {
