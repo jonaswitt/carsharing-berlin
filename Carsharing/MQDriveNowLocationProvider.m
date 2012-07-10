@@ -27,7 +27,7 @@
         if (resultBlock) {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                 NSError *error = nil;
-                id JSON = AFJSONDecode(operation.responseData, &error);
+                id JSON = AFJSONDecode(responseObject, &error);
                 NSMutableArray *cars = [NSMutableArray array];
                 for (NSDictionary *carInfo in [[[JSON objectForKey:@"rec"] objectForKey:@"vehicles"] objectForKey:@"vehicles"]) {
                     [cars addObject:[[MQDriveNowCar alloc] initWithAttributes:carInfo]];
