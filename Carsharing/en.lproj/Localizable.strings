@@ -1,0 +1,11 @@
+
+"OK" = "OK";
+"Cancel" = "Cancel";
+"Your Location" = "Your Location";
+"You have disabled location services for this application. Please enable location services in system settings to locate your position on the map." = "You have disabled location services for this application. Please enable location services in system settings to locate your position on the map.";
+"Updating…" = "Updating…";
+"Last updated: %@" = "Last updated: %@";
+"never" = "never";
+"App required" = "App required";
+"You need a separate app to make a reservation for this vehicle. Would you like to view that app in the App Store now?" = "You need a separate app to make a reservation for this vehicle. Would you like to view that app in the App Store now?";
+"Download" = "Show App";

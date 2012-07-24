@@ -27,7 +27,6 @@
 		7852C0B215346CCC007A8609 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0B115346CCC007A8609 /* main.m */; };
 		7852C0B615346CCC007A8609 /* MQCarsharingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0B515346CCC007A8609 /* MQCarsharingAppDelegate.m */; };
 		7852C0B915346CCC007A8609 /* MQCarMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C0B815346CCC007A8609 /* MQCarMapViewController.m */; };
-		7852C0BC15346CCC007A8609 /* MQCarMapViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7852C0BA15346CCC007A8609 /* MQCarMapViewController~iphone.xib */; };
 		7852C0E915346DBF007A8609 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0E815346DBF007A8609 /* CFNetwork.framework */; };
 		7852C0EB15346DC5007A8609 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0EA15346DC5007A8609 /* SystemConfiguration.framework */; };
 		7852C0ED15346DCC007A8609 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0EC15346DCC007A8609 /* MobileCoreServices.framework */; };
@@ -54,11 +53,13 @@
 		7860F13C15BF002C00128625 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7860F13815BF002C00128625 /* Default-Landscape@2x.png */; };
 		7860F13D15BF002C00128625 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 7860F13915BF002C00128625 /* Default-Portrait.png */; };
 		7860F13E15BF002C00128625 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7860F13A15BF002C00128625 /* Default-Portrait@2x.png */; };
+		7860F14115BF00DA00128625 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7860F14315BF00DA00128625 /* Localizable.strings */; };
+		7860F14615BF010000128625 /* MQCarMapViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7860F14415BF010000128625 /* MQCarMapViewController~ipad.xib */; };
+		7860F14715BF010000128625 /* MQCarMapViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7860F14515BF010000128625 /* MQCarMapViewController~iphone.xib */; };
 		7886DC9F1593622400FD139D /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9B1593622400FD139D /* Icon-iPad.png */; };
 		7886DCA01593622400FD139D /* Icon-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9C1593622400FD139D /* Icon-iPad@2x.png */; };
 		7886DCA11593622400FD139D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9D1593622400FD139D /* Icon.png */; };
 		7886DCA21593622400FD139D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9E1593622400FD139D /* Icon@2x.png */; };
-		7886DCAB159362C200FD139D /* MQCarMapViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7886DCAA159362C200FD139D /* MQCarMapViewController~ipad.xib */; };
 		788AE58115A5F1E300320E60 /* Cars.png in Resources */ = {isa = PBXBuildFile; fileRef = 788AE57F15A5F1E300320E60 /* Cars.png */; };
 		788AE58215A5F1E300320E60 /* Cars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 788AE58015A5F1E300320E60 /* Cars@2x.png */; };
 		788AE59115A6E88C00320E60 /* MQCarAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE59015A6E88C00320E60 /* MQCarAnnotationView.m */; };
@@ -104,7 +105,6 @@
 		7852C0B515346CCC007A8609 /* MQCarsharingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQCarsharingAppDelegate.m; sourceTree = "<group>"; };
 		7852C0B715346CCC007A8609 /* MQCarMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MQCarMapViewController.h; sourceTree = "<group>"; };
 		7852C0B815346CCC007A8609 /* MQCarMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQCarMapViewController.m; sourceTree = "<group>"; };
-		7852C0BB15346CCC007A8609 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/MQCarMapViewController~iphone.xib"; sourceTree = "<group>"; };
 		7852C0E815346DBF007A8609 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7852C0EA15346DC5007A8609 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7852C0EC15346DCC007A8609 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -147,11 +147,15 @@
 		7860F13815BF002C00128625 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
 		7860F13915BF002C00128625 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
 		7860F13A15BF002C00128625 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		7860F14215BF00DA00128625 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7860F14415BF010000128625 /* MQCarMapViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MQCarMapViewController~ipad.xib"; sourceTree = "<group>"; };
+		7860F14515BF010000128625 /* MQCarMapViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MQCarMapViewController~iphone.xib"; sourceTree = "<group>"; };
+		7860F14815BF011D00128625 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7860F14915BF011D00128625 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7886DC9B1593622400FD139D /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
 		7886DC9C1593622400FD139D /* Icon-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad@2x.png"; sourceTree = "<group>"; };
 		7886DC9D1593622400FD139D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7886DC9E1593622400FD139D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		7886DCAA159362C200FD139D /* MQCarMapViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MQCarMapViewController~ipad.xib"; path = "en.lproj/MQCarMapViewController~ipad.xib"; sourceTree = "<group>"; };
 		788AE57F15A5F1E300320E60 /* Cars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cars.png; sourceTree = "<group>"; };
 		788AE58015A5F1E300320E60 /* Cars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cars@2x.png"; sourceTree = "<group>"; };
 		788AE58F15A6E88C00320E60 /* MQCarAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQCarAnnotationView.h; sourceTree = "<group>"; };
@@ -258,8 +262,8 @@
 				7852C0B815346CCC007A8609 /* MQCarMapViewController.m */,
 				788AE58F15A6E88C00320E60 /* MQCarAnnotationView.h */,
 				788AE59015A6E88C00320E60 /* MQCarAnnotationView.m */,
-				7852C0BA15346CCC007A8609 /* MQCarMapViewController~iphone.xib */,
-				7886DCAA159362C200FD139D /* MQCarMapViewController~ipad.xib */,
+				7860F14415BF010000128625 /* MQCarMapViewController~ipad.xib */,
+				7860F14515BF010000128625 /* MQCarMapViewController~iphone.xib */,
 				7852C0F015346F06007A8609 /* SBJson */,
 				788AE5C615A6F39F00320E60 /* AFNetworking */,
 				7852C0AC15346CCC007A8609 /* Supporting Files */,
@@ -295,6 +299,7 @@
 				7852C0AE15346CCC007A8609 /* InfoPlist.strings */,
 				7852C0B115346CCC007A8609 /* main.m */,
 				7852C0B315346CCC007A8609 /* Carsharing-Prefix.pch */,
+				7860F14315BF00DA00128625 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -425,7 +430,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7852C0B015346CCC007A8609 /* InfoPlist.strings in Resources */,
-				7852C0BC15346CCC007A8609 /* MQCarMapViewController~iphone.xib in Resources */,
 				782471DF15388FDB0024AAE5 /* Car2Go.png in Resources */,
 				782471E015388FDB0024AAE5 /* Car2Go@2x.png in Resources */,
 				782471E31538907A0024AAE5 /* DriveNow.png in Resources */,
@@ -438,7 +442,6 @@
 				7886DCA01593622400FD139D /* Icon-iPad@2x.png in Resources */,
 				7886DCA11593622400FD139D /* Icon.png in Resources */,
 				7886DCA21593622400FD139D /* Icon@2x.png in Resources */,
-				7886DCAB159362C200FD139D /* MQCarMapViewController~ipad.xib in Resources */,
 				788AE58115A5F1E300320E60 /* Cars.png in Resources */,
 				788AE58215A5F1E300320E60 /* Cars@2x.png in Resources */,
 				7860F13115BEF98200128625 /* Default.png in Resources */,
@@ -447,6 +450,9 @@
 				7860F13C15BF002C00128625 /* Default-Landscape@2x.png in Resources */,
 				7860F13D15BF002C00128625 /* Default-Portrait.png in Resources */,
 				7860F13E15BF002C00128625 /* Default-Portrait@2x.png in Resources */,
+				7860F14115BF00DA00128625 /* Localizable.strings in Resources */,
+				7860F14615BF010000128625 /* MQCarMapViewController~ipad.xib in Resources */,
+				7860F14715BF010000128625 /* MQCarMapViewController~iphone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,16 +505,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				7852C0AF15346CCC007A8609 /* en */,
+				7860F14815BF011D00128625 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		7852C0BA15346CCC007A8609 /* MQCarMapViewController~iphone.xib */ = {
+		7860F14315BF00DA00128625 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7852C0BB15346CCC007A8609 /* en */,
+				7860F14215BF00DA00128625 /* en */,
+				7860F14915BF011D00128625 /* de */,
 			);
-			name = "MQCarMapViewController~iphone.xib";
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,0 +1,11 @@
+
+"OK" = "OK";
+"Cancel" = "Abbrechen";
+"Your Location" = "Deine Position";
+"You have disabled location services for this application. Please enable location services in system settings to locate your position on the map." = "Du hast die Ortungsdienste für diese App deaktiviert. Bitte aktiviere die Ortungsdienste in den Systemeinstellungen, um deine Position auf der Karte zu sehen.";
+"Updating…" = "Aktualisiere…";
+"Last updated: %@" = "Aktualisiert: %@";
+"never" = "nie";
+"App required" = "App benötigt";
+"You need a separate app to make a reservation for this vehicle. Would you like to view that app in the App Store now?" = "Du benötigst eine separate App, um eine Reservierung für dieses Auto zu tätigen. Möchtest du diese App im App Store ansehen?";
+"Download" = "App Ansehen";

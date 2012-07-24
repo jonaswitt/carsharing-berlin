@@ -127,7 +127,7 @@
         [formatter setDateStyle:NSDateFormatterShortStyle];
         [formatter setTimeStyle:NSDateFormatterShortStyle];
     }
-    self.statusLabel.text = [NSString stringWithFormat:@"Last updated: %@", self.lastRefreshDate ? [formatter stringFromDate:self.lastRefreshDate] : NSLocalizedString(@"never", @"")]; 
+    self.statusLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Last updated: %@", @""), self.lastRefreshDate ? [formatter stringFromDate:self.lastRefreshDate] : NSLocalizedString(@"never", @"")];
 }
 
 - (void)viewDidAppear:(BOOL)animated
