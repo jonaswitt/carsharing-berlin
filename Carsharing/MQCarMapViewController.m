@@ -198,7 +198,7 @@
     MQCar *car = (MQCar *)view.annotation;
     if (![car launchApp] && [car appURL]) {
         self.alertedCar = (MQCar *)view.annotation;
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"App required", @"") message:NSLocalizedString(@"You need a seperate app to make a reservation for this vehicle. Would you like to download that app now?", @"") delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"") otherButtonTitles:NSLocalizedString(@"Download", @""), nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"App required", @"") message:NSLocalizedString(@"You need a separate app to make a reservation for this vehicle. Would you like to view that app in the App Store now?", @"") delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"") otherButtonTitles:NSLocalizedString(@"Download", @""), nil];
         [alert show];
     }
 }
