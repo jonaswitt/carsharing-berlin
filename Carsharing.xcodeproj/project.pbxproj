@@ -57,8 +57,8 @@
 		7860F14615BF010000128625 /* MQCarMapViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7860F14415BF010000128625 /* MQCarMapViewController~ipad.xib */; };
 		7860F14715BF010000128625 /* MQCarMapViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7860F14515BF010000128625 /* MQCarMapViewController~iphone.xib */; };
 		7860F14B15BF063100128625 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7860F14A15BF063100128625 /* CrashReporter.framework */; };
-		7886DC9F1593622400FD139D /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9B1593622400FD139D /* Icon-iPad.png */; };
-		7886DCA01593622400FD139D /* Icon-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9C1593622400FD139D /* Icon-iPad@2x.png */; };
+		7860F15915BF07AD00128625 /* Icon-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7860F15815BF07AD00128625 /* Icon-iPad@2x.png */; };
+		7860F15B15BF07B500128625 /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7860F15A15BF07B500128625 /* Icon-iPad.png */; };
 		7886DCA11593622400FD139D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9D1593622400FD139D /* Icon.png */; };
 		7886DCA21593622400FD139D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9E1593622400FD139D /* Icon@2x.png */; };
 		788AE58115A5F1E300320E60 /* Cars.png in Resources */ = {isa = PBXBuildFile; fileRef = 788AE57F15A5F1E300320E60 /* Cars.png */; };
@@ -154,8 +154,8 @@
 		7860F14815BF011D00128625 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7860F14915BF011D00128625 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7860F14A15BF063100128625 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = CrashReporter/CrashReporter.framework; sourceTree = "<group>"; };
-		7886DC9B1593622400FD139D /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
-		7886DC9C1593622400FD139D /* Icon-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad@2x.png"; sourceTree = "<group>"; };
+		7860F15815BF07AD00128625 /* Icon-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-iPad@2x.png"; path = "../Icon-iPad@2x.png"; sourceTree = "<group>"; };
+		7860F15A15BF07B500128625 /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-iPad.png"; path = "../Icon-iPad.png"; sourceTree = "<group>"; };
 		7886DC9D1593622400FD139D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7886DC9E1593622400FD139D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		788AE57F15A5F1E300320E60 /* Cars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cars.png; sourceTree = "<group>"; };
@@ -279,8 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				7855D5D31562CEA0000BCCDB /* Carsharing.entitlements */,
-				7886DC9B1593622400FD139D /* Icon-iPad.png */,
-				7886DC9C1593622400FD139D /* Icon-iPad@2x.png */,
+				7860F15A15BF07B500128625 /* Icon-iPad.png */,
+				7860F15815BF07AD00128625 /* Icon-iPad@2x.png */,
 				7886DC9D1593622400FD139D /* Icon.png */,
 				7886DC9E1593622400FD139D /* Icon@2x.png */,
 				782471DD15388FDB0024AAE5 /* Car2Go.png */,
@@ -442,8 +442,6 @@
 				782471E8153893780024AAE5 /* DriveNow1er@2x.png in Resources */,
 				782773F9154AA48500397B16 /* Location.png in Resources */,
 				782773FA154AA48500397B16 /* Location@2x.png in Resources */,
-				7886DC9F1593622400FD139D /* Icon-iPad.png in Resources */,
-				7886DCA01593622400FD139D /* Icon-iPad@2x.png in Resources */,
 				7886DCA11593622400FD139D /* Icon.png in Resources */,
 				7886DCA21593622400FD139D /* Icon@2x.png in Resources */,
 				788AE58115A5F1E300320E60 /* Cars.png in Resources */,
@@ -457,6 +455,8 @@
 				7860F14115BF00DA00128625 /* Localizable.strings in Resources */,
 				7860F14615BF010000128625 /* MQCarMapViewController~ipad.xib in Resources */,
 				7860F14715BF010000128625 /* MQCarMapViewController~iphone.xib in Resources */,
+				7860F15915BF07AD00128625 /* Icon-iPad@2x.png in Resources */,
+				7860F15B15BF07B500128625 /* Icon-iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

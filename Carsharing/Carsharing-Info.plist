@@ -8,6 +8,13 @@
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon.png</string>
+		<string>Icon-iPad.png</string>
+		<string>Icon@2x.png</string>
+		<string>Icon-iPad@2x.png</string>
+	</array>
 	<key>CFBundleIcons</key>
 	<dict>
 		<key>CFBundlePrimaryIcon</key>
@@ -44,6 +51,13 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 </dict>
 </plist>
