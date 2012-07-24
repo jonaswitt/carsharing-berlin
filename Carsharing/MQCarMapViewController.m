@@ -54,9 +54,28 @@
 
 - (IBAction)centerUserLocation:(id)sender
 {
-    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
-    if (locationManager.location)
-        [self.mapView setRegion:MKCoordinateRegionMakeWithDistance(locationManager.location.coordinate, 600, 600) animated:YES];
+    switch ([CLLocationManager authorizationStatus]) {
+        case kCLAuthorizationStatusAuthorized:
+        default: {
+            CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+            if (locationManager.location)
+                [self.mapView setRegion:MKCoordinateRegionMakeWithDistance(locationManager.location.coordinate, 600, 600) animated:YES];
+            break;
+        }
+            
+        case kCLAuthorizationStatusRestricted:
+            // we can't do much in this case
+            break;
+            
+        case kCLAuthorizationStatusDenied: {
+            if (sender) {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Your Location", @"") message:NSLocalizedString(@"You have disabled location services for this application. Please enable location services in system settings to locate your position on the map.", @"") delegate:self cancelButtonTitle:NSLocalizedString(@"OK", @"") otherButtonTitles:nil];
+                [alert show];
+                break;                
+            }
+        }
+    }
+    
 }
 
 - (IBAction)refreshIfNeccessary
