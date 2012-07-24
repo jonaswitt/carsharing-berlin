@@ -56,6 +56,7 @@
 		7860F14115BF00DA00128625 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7860F14315BF00DA00128625 /* Localizable.strings */; };
 		7860F14615BF010000128625 /* MQCarMapViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7860F14415BF010000128625 /* MQCarMapViewController~ipad.xib */; };
 		7860F14715BF010000128625 /* MQCarMapViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7860F14515BF010000128625 /* MQCarMapViewController~iphone.xib */; };
+		7860F14B15BF063100128625 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7860F14A15BF063100128625 /* CrashReporter.framework */; };
 		7886DC9F1593622400FD139D /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9B1593622400FD139D /* Icon-iPad.png */; };
 		7886DCA01593622400FD139D /* Icon-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9C1593622400FD139D /* Icon-iPad@2x.png */; };
 		7886DCA11593622400FD139D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9D1593622400FD139D /* Icon.png */; };
@@ -152,6 +153,7 @@
 		7860F14515BF010000128625 /* MQCarMapViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MQCarMapViewController~iphone.xib"; sourceTree = "<group>"; };
 		7860F14815BF011D00128625 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7860F14915BF011D00128625 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7860F14A15BF063100128625 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = CrashReporter/CrashReporter.framework; sourceTree = "<group>"; };
 		7886DC9B1593622400FD139D /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
 		7886DC9C1593622400FD139D /* Icon-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad@2x.png"; sourceTree = "<group>"; };
 		7886DC9D1593622400FD139D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				7852C0E915346DBF007A8609 /* CFNetwork.framework in Frameworks */,
 				7852C0A615346CCC007A8609 /* UIKit.framework in Frameworks */,
 				7852C0A815346CCC007A8609 /* Foundation.framework in Frameworks */,
+				7860F14B15BF063100128625 /* CrashReporter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +240,7 @@
 		7852C0A415346CCC007A8609 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7860F14A15BF063100128625 /* CrashReporter.framework */,
 				78247182153866CA0024AAE5 /* Security.framework */,
 				7852C11F15347318007A8609 /* CoreLocation.framework */,
 				7852C11D1534730B007A8609 /* MapKit.framework */,
@@ -572,6 +576,10 @@
 		7852C0C015346CCC007A8609 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CrashReporter\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Carsharing/Carsharing-Prefix.pch";
 				INFOPLIST_FILE = "Carsharing/Carsharing-Info.plist";
@@ -587,6 +595,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Carsharing/Carsharing.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CrashReporter\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Carsharing/Carsharing-Prefix.pch";
 				INFOPLIST_FILE = "Carsharing/Carsharing-Info.plist";

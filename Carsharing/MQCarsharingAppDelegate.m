@@ -10,6 +10,8 @@
 
 #import "MQCarMapViewController.h"
 
+#import <CrashReporter/CrashReporter.h>
+
 @implementation MQCarsharingAppDelegate
 
 @synthesize window = _window;
@@ -23,6 +25,20 @@
     self.viewController = [[MQCarMapViewController alloc] initWithNibName:@"MQCarMapViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+#if !TARGET_IPHONE_SIMULATOR
+	PLCrashReporter *crashReporter = [PLCrashReporter sharedReporter];
+	NSError *error;
+	
+	// Check if we previously crashed
+	if ([crashReporter hasPendingCrashReport])
+		[self handleCrashReport];
+    
+	// Enable the Crash Reporter
+	if (![crashReporter enableCrashReporterAndReturnError: &error])
+		NSLog(@"Warning: Could not enable crash reporter: %@", error);
+#endif
+    
     return YES;
 }
 
@@ -52,5 +68,31 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#if !TARGET_IPHONE_SIMULATOR
+- (void)handleCrashReport
+{
+	PLCrashReporter *crashReporter = [PLCrashReporter sharedReporter];
+	NSData *crashData;
+	NSError *error;
+	
+	// Try loading the crash report
+	crashData = [crashReporter loadPendingCrashReportDataAndReturnError: &error];
+	if (crashData == nil) {
+		NSLog(@"Could not load crash report: %@", error);
+        [crashReporter purgePendingCrashReport];
+        return;
+	}
+    
+	NSMutableURLRequest *uploadRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://backend.metaquark.de/crashlogs/"]];
+	[uploadRequest setHTTPMethod:@"POST"];
+	[uploadRequest setHTTPBody:crashData];
+	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:uploadRequest delegate:nil];
+	
+	// Purge the report
+	[crashReporter purgePendingCrashReport];
+	return;
+}
+#endif
 
 @end

@@ -16,4 +16,8 @@
 
 @property (strong, nonatomic) MQCarMapViewController *viewController;
 
+#if !TARGET_IPHONE_SIMULATOR
+- (void)handleCrashReport;
+#endif
+
 @end
