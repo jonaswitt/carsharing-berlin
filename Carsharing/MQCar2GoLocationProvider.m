@@ -23,7 +23,7 @@
     
     NSString *path = @"vehicles";
     [client cancelAllHTTPOperationsWithMethod:@"GET" path:path];
-    [client getPath:path parameters:[NSDictionary dictionaryWithObjectsAndKeys:@"Berlin", @"loc", @"Mobilitaetsplattform", @"oauth_consumer_key", @"json", @"format", nil] success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [client getPath:path parameters:[NSDictionary dictionaryWithObjectsAndKeys:@"Berlin", @"loc", @"JonasWitt", @"oauth_consumer_key", @"json", @"format", nil] success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (resultBlock) {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                 NSError *error = nil;
