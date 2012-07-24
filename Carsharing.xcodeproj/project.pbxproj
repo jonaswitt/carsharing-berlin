@@ -48,6 +48,12 @@
 		7852C11C153471E7007A8609 /* MQDriveNowCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852C11B153471E7007A8609 /* MQDriveNowCar.m */; };
 		7852C11E1534730B007A8609 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C11D1534730B007A8609 /* MapKit.framework */; };
 		7852C12015347318007A8609 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C11F15347318007A8609 /* CoreLocation.framework */; };
+		7860F13115BEF98200128625 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7860F12F15BEF98200128625 /* Default.png */; };
+		7860F13215BEF98200128625 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7860F13015BEF98200128625 /* Default@2x.png */; };
+		7860F13B15BF002C00128625 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 7860F13715BF002C00128625 /* Default-Landscape.png */; };
+		7860F13C15BF002C00128625 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7860F13815BF002C00128625 /* Default-Landscape@2x.png */; };
+		7860F13D15BF002C00128625 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 7860F13915BF002C00128625 /* Default-Portrait.png */; };
+		7860F13E15BF002C00128625 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7860F13A15BF002C00128625 /* Default-Portrait@2x.png */; };
 		7886DC9F1593622400FD139D /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9B1593622400FD139D /* Icon-iPad.png */; };
 		7886DCA01593622400FD139D /* Icon-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9C1593622400FD139D /* Icon-iPad@2x.png */; };
 		7886DCA11593622400FD139D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7886DC9D1593622400FD139D /* Icon.png */; };
@@ -135,6 +141,12 @@
 		7852C11D1534730B007A8609 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7852C11F15347318007A8609 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7855D5D31562CEA0000BCCDB /* Carsharing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Carsharing.entitlements; sourceTree = "<group>"; };
+		7860F12F15BEF98200128625 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7860F13015BEF98200128625 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7860F13715BF002C00128625 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		7860F13815BF002C00128625 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		7860F13915BF002C00128625 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		7860F13A15BF002C00128625 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x.png"; sourceTree = "<group>"; };
 		7886DC9B1593622400FD139D /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
 		7886DC9C1593622400FD139D /* Icon-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad@2x.png"; sourceTree = "<group>"; };
 		7886DC9D1593622400FD139D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -271,6 +283,12 @@
 				782471E21538907A0024AAE5 /* DriveNow@2x.png */,
 				782471E5153893780024AAE5 /* DriveNow1er.png */,
 				782471E6153893780024AAE5 /* DriveNow1er@2x.png */,
+				7860F12F15BEF98200128625 /* Default.png */,
+				7860F13015BEF98200128625 /* Default@2x.png */,
+				7860F13715BF002C00128625 /* Default-Landscape.png */,
+				7860F13815BF002C00128625 /* Default-Landscape@2x.png */,
+				7860F13915BF002C00128625 /* Default-Portrait.png */,
+				7860F13A15BF002C00128625 /* Default-Portrait@2x.png */,
 				782773F7154AA48500397B16 /* Location.png */,
 				782773F8154AA48500397B16 /* Location@2x.png */,
 				7852C0AD15346CCC007A8609 /* Carsharing-Info.plist */,
@@ -423,6 +441,12 @@
 				7886DCAB159362C200FD139D /* MQCarMapViewController~ipad.xib in Resources */,
 				788AE58115A5F1E300320E60 /* Cars.png in Resources */,
 				788AE58215A5F1E300320E60 /* Cars@2x.png in Resources */,
+				7860F13115BEF98200128625 /* Default.png in Resources */,
+				7860F13215BEF98200128625 /* Default@2x.png in Resources */,
+				7860F13B15BF002C00128625 /* Default-Landscape.png in Resources */,
+				7860F13C15BF002C00128625 /* Default-Landscape@2x.png in Resources */,
+				7860F13D15BF002C00128625 /* Default-Portrait.png in Resources */,
+				7860F13E15BF002C00128625 /* Default-Portrait@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
