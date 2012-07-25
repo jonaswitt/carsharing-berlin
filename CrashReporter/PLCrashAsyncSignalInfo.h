@@ -1,7 +1,7 @@
 /*
  * Author: Landon Fuller <landonf@plausiblelabs.com>
  *
- * Copyright (c) 2008-2010 Plausible Labs Cooperative, Inc.
+ * Copyright (c) 2008-2009 Plausible Labs Cooperative, Inc.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person
@@ -26,26 +26,19 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#import <Foundation/Foundation.h>
-
-#import "PLCrashReport.h"
 
 /**
- * A crash report formatter accepts a PLCrashReport instance, formats it according to implementation-specified rules,
- * (such as implementing text output support), and returns the result.
+ * @defgroup plcrash_async_signal_info Signal Information
+ * @ingroup plcrash_async
+ *
+ * Provides mapping of signal number and code to strings.
+ *
+ * @{
  */
-@protocol PLCrashReportFormatter
+
+const char *plcrash_async_signal_signame (int signal);
+const char *plcrash_async_signal_sigcode (int signal, int si_code);
 
 /**
- * Format the provided @a report.
- *
- * @param report Report to be formatted.
- * @param outError A pointer to an NSError object variable. If an error occurs, this pointer will contain an error
- * object indicating why the pending crash report could not be formatted. If no error occurs, this parameter will
- * be left unmodified. You may specify nil for this parameter, and no error information will be provided.
- *
- * @return Returns the formatted report data on success, or nil on failure.
+ * @} plcrash_async_signal_info
  */
-- (NSData *) formatReport: (PLCrashReport *) report error: (NSError **) outError;
-
-@end

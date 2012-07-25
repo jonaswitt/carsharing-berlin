@@ -44,10 +44,7 @@ typedef enum {
     PLCrashReportOperatingSystemiPhoneOS = 1,
     
     /** iPhone Simulator (Mac OS X with additional simulator-specific runtime libraries) */
-    PLCrashReportOperatingSystemiPhoneSimulator = 2,
-    
-    /** Unknown operating system */
-    PLCrashReportOperatingSystemUnknown = 3,
+    PLCrashReportOperatingSystemiPhoneSimulator = 2
 } PLCrashReportOperatingSystem;
 
 /**
@@ -64,22 +61,12 @@ typedef enum {
     
     /** x86-64 */
     PLCrashReportArchitectureX86_64 = 1,
-
-    /** ARMv6 */
-    PLCrashReportArchitectureARMv6 = 2,
-
-    /**
-     * ARMv6
-     * @deprecated
-     * @sa PLCrashReportArchitectureARMv6
-     */
-    PLCrashReportArchitectureARM = PLCrashReportArchitectureARMv6,
+    
+    /** ARM */
+    PLCrashReportArchitectureARM = 2,
 
     /** PPC */
-    PLCrashReportArchitecturePPC = 3,
-    
-    /** ARMv7 */
-    PLCrashReportArchitectureARMv7 = 4,
+    PLCrashReportArchitecturePPC = 3
 } PLCrashReportArchitecture;
 
 
@@ -94,9 +81,6 @@ extern PLCrashReportArchitecture PLCrashReportHostArchitecture;
     /** Operating system version */
     NSString *_osVersion;
     
-    /** OS build. May be nil. */
-    NSString *_osBuild;
-    
     /** Architecture */
     PLCrashReportArchitecture _architecture;
     
@@ -109,25 +93,25 @@ extern PLCrashReportArchitecture PLCrashReportHostArchitecture;
                   architecture: (PLCrashReportArchitecture) architecture
                      timestamp: (NSDate *) timestamp;
 
-- (id) initWithOperatingSystem: (PLCrashReportOperatingSystem) operatingSystem 
-        operatingSystemVersion: (NSString *) operatingSystemVersion
-          operatingSystemBuild: (NSString *) operatingSystemBuild
-                  architecture: (PLCrashReportArchitecture) architecture
-                     timestamp: (NSDate *) timestamp;
-
-/** The operating system. */
+/**
+ * The operating system.
+ */
 @property(nonatomic, readonly) PLCrashReportOperatingSystem operatingSystem;
 
-/** The operating system's release version. */
+/**
+ * The operating system's release version.
+ */
 @property(nonatomic, readonly) NSString *operatingSystemVersion;
 
-/** The operating system's build identifier (eg, 10J869). This may be unavailable, and this property will be nil. */
-@property(nonatomic, readonly) NSString *operatingSystemBuild;
-
-/** Architecture. */
+/**
+ * Architecture.
+ */
 @property(nonatomic, readonly) PLCrashReportArchitecture architecture;
 
-/** Date and time that the crash report was generated. This may be unavailable, and this property will be nil. */
+/**
+ * Date and time that the crash report was generated. This may
+ * be unavailable, and this property will be nil.
+ */
 @property(nonatomic, readonly) NSDate *timestamp;
 
 @end
