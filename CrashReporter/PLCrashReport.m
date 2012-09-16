@@ -44,7 +44,7 @@ struct _PLCrashReportDecoder {
 - (PLCrashReportApplicationInfo *) extractApplicationInfo: (Plcrash__CrashReport__ApplicationInfo *) applicationInfo error: (NSError **) outError;
 - (NSArray *) extractThreadInfo: (Plcrash__CrashReport *) crashReport error: (NSError **) outError;
 - (NSArray *) extractImageInfo: (Plcrash__CrashReport *) crashReport error: (NSError **) outError;
-- (PLCrashReportApplicationInfo *) extractExceptionInfo: (Plcrash__CrashReport__Exception *) exceptionInfo error: (NSError **) outError;
+- (PLCrashReportExceptionInfo *) extractExceptionInfo: (Plcrash__CrashReport__Exception *) exceptionInfo error: (NSError **) outError;
 - (PLCrashReportSignalInfo *) extractSignalInfo: (Plcrash__CrashReport__Signal *) signalInfo error: (NSError **) outError;
 
 @end
@@ -406,7 +406,7 @@ error:
                 output[i * 2 + 0] = hex[c >> 4];
                 output[i * 2 + 1] = hex[c & 0x0F];
             }
-            output[sizeof(output)] = '\0';
+            output[sizeof(output)-1] = '\0';
     
             uuid = [[[NSString alloc] initWithBytes: output length: sizeof(output) - 1 encoding: NSASCIIStringEncoding] autorelease];
         }
@@ -425,7 +425,7 @@ error:
 /**
  * Extract  exception information from the crash log. Returns nil on error.
  */
-- (PLCrashReportApplicationInfo *) extractExceptionInfo: (Plcrash__CrashReport__Exception *) exceptionInfo
+- (PLCrashReportExceptionInfo *) extractExceptionInfo: (Plcrash__CrashReport__Exception *) exceptionInfo
                                                error: (NSError **) outError
 {
     /* Validate */
