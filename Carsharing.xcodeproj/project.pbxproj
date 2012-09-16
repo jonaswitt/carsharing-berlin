@@ -73,6 +73,7 @@
 		788AE5E315A6F39F00320E60 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5D715A6F39F00320E60 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		788AE5E415A6F39F00320E60 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5D915A6F39F00320E60 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		788AE5E515A6F39F00320E60 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE5DB15A6F39F00320E60 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		789182251605F50E0029CC55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 789182241605F50E0029CC55 /* Default-568h@2x.png */; };
 		7896402D15BFE814009418AF /* CrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7896400115BFE814009418AF /* CrashReporter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7896402E15BFE814009418AF /* PLCrashAsync.c in Sources */ = {isa = PBXBuildFile; fileRef = 7896400215BFE814009418AF /* PLCrashAsync.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7896402F15BFE814009418AF /* PLCrashAsyncSignalInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 7896400415BFE814009418AF /* PLCrashAsyncSignalInfo.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -202,6 +203,7 @@
 		788AE5D915A6F39F00320E60 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		788AE5DA15A6F39F00320E60 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		788AE5DB15A6F39F00320E60 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		789182241605F50E0029CC55 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7896400015BFE814009418AF /* CrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporter.h; sourceTree = "<group>"; };
 		7896400115BFE814009418AF /* CrashReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashReporter.m; sourceTree = "<group>"; };
 		7896400215BFE814009418AF /* PLCrashAsync.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashAsync.c; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 				7860F13815BF002C00128625 /* Default-Landscape@2x.png */,
 				7860F13915BF002C00128625 /* Default-Portrait.png */,
 				7860F13A15BF002C00128625 /* Default-Portrait@2x.png */,
+				789182241605F50E0029CC55 /* Default-568h@2x.png */,
 				782773F7154AA48500397B16 /* Location.png */,
 				782773F8154AA48500397B16 /* Location@2x.png */,
 				7852C0AD15346CCC007A8609 /* Carsharing-Info.plist */,
@@ -568,6 +571,7 @@
 				7860F14715BF010000128625 /* MQCarMapViewController~iphone.xib in Resources */,
 				7860F15915BF07AD00128625 /* Icon-iPad@2x.png in Resources */,
 				7860F15B15BF07B500128625 /* Icon-iPad.png in Resources */,
+				789182251605F50E0029CC55 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
