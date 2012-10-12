@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780A5130162808BC008940D6 /* MQMulticityLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A512F162808BC008940D6 /* MQMulticityLocationProvider.m */; };
+		780A513616280B2A008940D6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 780A513516280B2A008940D6 /* libxml2.dylib */; };
+		780A516E16280CCF008940D6 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A515316280CCF008940D6 /* CXMLDocument_CreationExtensions.m */; };
+		780A516F16280CCF008940D6 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A515516280CCF008940D6 /* CXMLNode_CreationExtensions.m */; };
+		780A517016280CCF008940D6 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A515716280CCF008940D6 /* CXHTMLDocument.m */; };
+		780A517116280CCF008940D6 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A515916280CCF008940D6 /* CXMLDocument.m */; };
+		780A517216280CCF008940D6 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A515B16280CCF008940D6 /* CXMLDocument_PrivateExtensions.m */; };
+		780A517316280CCF008940D6 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A515D16280CCF008940D6 /* CXMLElement.m */; };
+		780A517416280CCF008940D6 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A515F16280CCF008940D6 /* CXMLElement_CreationExtensions.m */; };
+		780A517516280CCF008940D6 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A516116280CCF008940D6 /* CXMLElement_ElementTreeExtensions.m */; };
+		780A517616280CCF008940D6 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A516316280CCF008940D6 /* CXMLNamespaceNode.m */; };
+		780A517716280CCF008940D6 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A516516280CCF008940D6 /* CXMLNode.m */; };
+		780A517816280CCF008940D6 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A516716280CCF008940D6 /* CXMLNode_PrivateExtensions.m */; };
+		780A517916280CCF008940D6 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A516916280CCF008940D6 /* CXMLNode_XPathExtensions.m */; };
+		780A517A16280CCF008940D6 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A516C16280CCF008940D6 /* CTidy.m */; };
+		780A517D1628107C008940D6 /* MQMulticityCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A517C1628107C008940D6 /* MQMulticityCar.m */; };
+		780A51801628132B008940D6 /* Multicity.png in Resources */ = {isa = PBXBuildFile; fileRef = 780A517E1628132B008940D6 /* Multicity.png */; };
+		780A51811628132B008940D6 /* Multicity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 780A517F1628132B008940D6 /* Multicity@2x.png */; };
 		78247183153866CA0024AAE5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78247182153866CA0024AAE5 /* Security.framework */; };
 		782471D1153888EA0024AAE5 /* MQCarLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 782471D0153888EA0024AAE5 /* MQCarLocationProvider.m */; };
 		782471D4153888FC0024AAE5 /* MQCar2GoLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 782471D3153888FC0024AAE5 /* MQCar2GoLocationProvider.m */; };
@@ -98,6 +116,40 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		780A512E162808BC008940D6 /* MQMulticityLocationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQMulticityLocationProvider.h; sourceTree = "<group>"; };
+		780A512F162808BC008940D6 /* MQMulticityLocationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQMulticityLocationProvider.m; sourceTree = "<group>"; };
+		780A513516280B2A008940D6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		780A515216280CCF008940D6 /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		780A515316280CCF008940D6 /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		780A515416280CCF008940D6 /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		780A515516280CCF008940D6 /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		780A515616280CCF008940D6 /* CXHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXHTMLDocument.h; sourceTree = "<group>"; };
+		780A515716280CCF008940D6 /* CXHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXHTMLDocument.m; sourceTree = "<group>"; };
+		780A515816280CCF008940D6 /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		780A515916280CCF008940D6 /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		780A515A16280CCF008940D6 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		780A515B16280CCF008940D6 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		780A515C16280CCF008940D6 /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		780A515D16280CCF008940D6 /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		780A515E16280CCF008940D6 /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		780A515F16280CCF008940D6 /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		780A516016280CCF008940D6 /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
+		780A516116280CCF008940D6 /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
+		780A516216280CCF008940D6 /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNamespaceNode.h; sourceTree = "<group>"; };
+		780A516316280CCF008940D6 /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNamespaceNode.m; sourceTree = "<group>"; };
+		780A516416280CCF008940D6 /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		780A516516280CCF008940D6 /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		780A516616280CCF008940D6 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		780A516716280CCF008940D6 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		780A516816280CCF008940D6 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		780A516916280CCF008940D6 /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		780A516B16280CCF008940D6 /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
+		780A516C16280CCF008940D6 /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
+		780A516D16280CCF008940D6 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		780A517B1628107C008940D6 /* MQMulticityCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQMulticityCar.h; sourceTree = "<group>"; };
+		780A517C1628107C008940D6 /* MQMulticityCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQMulticityCar.m; sourceTree = "<group>"; };
+		780A517E1628132B008940D6 /* Multicity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Multicity.png; sourceTree = "<group>"; };
+		780A517F1628132B008940D6 /* Multicity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multicity@2x.png"; sourceTree = "<group>"; };
 		78247182153866CA0024AAE5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		782471CF153888EA0024AAE5 /* MQCarLocationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQCarLocationProvider.h; sourceTree = "<group>"; };
 		782471D0153888EA0024AAE5 /* MQCarLocationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQCarLocationProvider.m; sourceTree = "<group>"; };
@@ -254,6 +306,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				780A513616280B2A008940D6 /* libxml2.dylib in Frameworks */,
 				78247183153866CA0024AAE5 /* Security.framework in Frameworks */,
 				7852C12015347318007A8609 /* CoreLocation.framework in Frameworks */,
 				7852C11E1534730B007A8609 /* MapKit.framework in Frameworks */,
@@ -270,6 +323,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		780A515016280CCF008940D6 /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				780A515116280CCF008940D6 /* Creation */,
+				780A515616280CCF008940D6 /* CXHTMLDocument.h */,
+				780A515716280CCF008940D6 /* CXHTMLDocument.m */,
+				780A515816280CCF008940D6 /* CXMLDocument.h */,
+				780A515916280CCF008940D6 /* CXMLDocument.m */,
+				780A515A16280CCF008940D6 /* CXMLDocument_PrivateExtensions.h */,
+				780A515B16280CCF008940D6 /* CXMLDocument_PrivateExtensions.m */,
+				780A515C16280CCF008940D6 /* CXMLElement.h */,
+				780A515D16280CCF008940D6 /* CXMLElement.m */,
+				780A515E16280CCF008940D6 /* CXMLElement_CreationExtensions.h */,
+				780A515F16280CCF008940D6 /* CXMLElement_CreationExtensions.m */,
+				780A516016280CCF008940D6 /* CXMLElement_ElementTreeExtensions.h */,
+				780A516116280CCF008940D6 /* CXMLElement_ElementTreeExtensions.m */,
+				780A516216280CCF008940D6 /* CXMLNamespaceNode.h */,
+				780A516316280CCF008940D6 /* CXMLNamespaceNode.m */,
+				780A516416280CCF008940D6 /* CXMLNode.h */,
+				780A516516280CCF008940D6 /* CXMLNode.m */,
+				780A516616280CCF008940D6 /* CXMLNode_PrivateExtensions.h */,
+				780A516716280CCF008940D6 /* CXMLNode_PrivateExtensions.m */,
+				780A516816280CCF008940D6 /* CXMLNode_XPathExtensions.h */,
+				780A516916280CCF008940D6 /* CXMLNode_XPathExtensions.m */,
+				780A516A16280CCF008940D6 /* Tidy */,
+				780A516D16280CCF008940D6 /* TouchXML.h */,
+			);
+			path = TouchXML;
+			sourceTree = SOURCE_ROOT;
+		};
+		780A515116280CCF008940D6 /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				780A515216280CCF008940D6 /* CXMLDocument_CreationExtensions.h */,
+				780A515316280CCF008940D6 /* CXMLDocument_CreationExtensions.m */,
+				780A515416280CCF008940D6 /* CXMLNode_CreationExtensions.h */,
+				780A515516280CCF008940D6 /* CXMLNode_CreationExtensions.m */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		780A516A16280CCF008940D6 /* Tidy */ = {
+			isa = PBXGroup;
+			children = (
+				780A516B16280CCF008940D6 /* CTidy.h */,
+				780A516C16280CCF008940D6 /* CTidy.m */,
+			);
+			path = Tidy;
+			sourceTree = "<group>";
+		};
 		7824718915386A060024AAE5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +382,8 @@
 				782471D3153888FC0024AAE5 /* MQCar2GoLocationProvider.m */,
 				782471D815388CA50024AAE5 /* MQDriveNowLocationProvider.h */,
 				782471D915388CA50024AAE5 /* MQDriveNowLocationProvider.m */,
+				780A512E162808BC008940D6 /* MQMulticityLocationProvider.h */,
+				780A512F162808BC008940D6 /* MQMulticityLocationProvider.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -286,6 +391,7 @@
 		7852C09615346CCC007A8609 = {
 			isa = PBXGroup;
 			children = (
+				780A513516280B2A008940D6 /* libxml2.dylib */,
 				7852C0AB15346CCC007A8609 /* Carsharing */,
 				7852C0A415346CCC007A8609 /* Frameworks */,
 				7852C0A215346CCC007A8609 /* Products */,
@@ -334,6 +440,7 @@
 				788AE5C615A6F39F00320E60 /* AFNetworking */,
 				78963FFF15BFE814009418AF /* CrashReporter */,
 				7852C0AC15346CCC007A8609 /* Supporting Files */,
+				780A515016280CCF008940D6 /* TouchXML */,
 			);
 			path = Carsharing;
 			sourceTree = "<group>";
@@ -354,6 +461,8 @@
 				782471E21538907A0024AAE5 /* DriveNow@2x.png */,
 				782471E5153893780024AAE5 /* DriveNow1er.png */,
 				782471E6153893780024AAE5 /* DriveNow1er@2x.png */,
+				780A517E1628132B008940D6 /* Multicity.png */,
+				780A517F1628132B008940D6 /* Multicity@2x.png */,
 				7860F12F15BEF98200128625 /* Default.png */,
 				7860F13015BEF98200128625 /* Default@2x.png */,
 				7860F13715BF002C00128625 /* Default-Landscape.png */,
@@ -413,6 +522,8 @@
 				7852C11B153471E7007A8609 /* MQDriveNowCar.m */,
 				782471D515388A5F0024AAE5 /* MQCar2GoCar.h */,
 				782471D615388A5F0024AAE5 /* MQCar2GoCar.m */,
+				780A517B1628107C008940D6 /* MQMulticityCar.h */,
+				780A517C1628107C008940D6 /* MQMulticityCar.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -572,6 +683,8 @@
 				7860F15915BF07AD00128625 /* Icon-iPad@2x.png in Resources */,
 				7860F15B15BF07B500128625 /* Icon-iPad.png in Resources */,
 				789182251605F50E0029CC55 /* Default-568h@2x.png in Resources */,
+				780A51801628132B008940D6 /* Multicity.png in Resources */,
+				780A51811628132B008940D6 /* Multicity@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +748,21 @@
 				7896404515BFE814009418AF /* PLCrashSignalHandler.m in Sources */,
 				7896405115BFE925009418AF /* crash_report.pb-c.c in Sources */,
 				7896405515BFE958009418AF /* protobuf-c.c in Sources */,
+				780A5130162808BC008940D6 /* MQMulticityLocationProvider.m in Sources */,
+				780A516E16280CCF008940D6 /* CXMLDocument_CreationExtensions.m in Sources */,
+				780A516F16280CCF008940D6 /* CXMLNode_CreationExtensions.m in Sources */,
+				780A517016280CCF008940D6 /* CXHTMLDocument.m in Sources */,
+				780A517116280CCF008940D6 /* CXMLDocument.m in Sources */,
+				780A517216280CCF008940D6 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				780A517316280CCF008940D6 /* CXMLElement.m in Sources */,
+				780A517416280CCF008940D6 /* CXMLElement_CreationExtensions.m in Sources */,
+				780A517516280CCF008940D6 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				780A517616280CCF008940D6 /* CXMLNamespaceNode.m in Sources */,
+				780A517716280CCF008940D6 /* CXMLNode.m in Sources */,
+				780A517816280CCF008940D6 /* CXMLNode_PrivateExtensions.m in Sources */,
+				780A517916280CCF008940D6 /* CXMLNode_XPathExtensions.m in Sources */,
+				780A517A16280CCF008940D6 /* CTidy.m in Sources */,
+				780A517D1628107C008940D6 /* MQMulticityCar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,6 +809,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 			};
@@ -698,6 +827,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

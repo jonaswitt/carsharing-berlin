@@ -11,6 +11,7 @@
 #import "MQDriveNowCar.h"
 #import "MQCar2GoLocationProvider.h"
 #import "MQDriveNowLocationProvider.h"
+#import "MQMulticityLocationProvider.h"
 #import "MQCarAnnotationView.h"
 
 @interface MQCarMapViewController ()
@@ -40,6 +41,7 @@
     self.carProviders = [NSArray arrayWithObjects:
                          [[MQCar2GoLocationProvider alloc] init], 
                          [[MQDriveNowLocationProvider alloc] init],
+                         [[MQMulticityLocationProvider alloc] init],
                          nil];
 }
 
