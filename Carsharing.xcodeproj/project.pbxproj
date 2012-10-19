@@ -391,7 +391,6 @@
 		7852C09615346CCC007A8609 = {
 			isa = PBXGroup;
 			children = (
-				780A513516280B2A008940D6 /* libxml2.dylib */,
 				7852C0AB15346CCC007A8609 /* Carsharing */,
 				7852C0A415346CCC007A8609 /* Frameworks */,
 				7852C0A215346CCC007A8609 /* Products */,
@@ -413,6 +412,7 @@
 				7852C11F15347318007A8609 /* CoreLocation.framework */,
 				7852C11D1534730B007A8609 /* MapKit.framework */,
 				7852C0EE15346DD9007A8609 /* libz.dylib */,
+				780A513516280B2A008940D6 /* libxml2.dylib */,
 				7852C0EC15346DCC007A8609 /* MobileCoreServices.framework */,
 				7852C0EA15346DC5007A8609 /* SystemConfiguration.framework */,
 				7852C0E815346DBF007A8609 /* CFNetwork.framework */,
