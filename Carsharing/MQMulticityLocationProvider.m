@@ -55,11 +55,12 @@
                 for (CXMLElement *node in [doc nodesForXPath:@"//buchAnfrageErg" error:nil]) {
                     double lat = [[[[node elementsForName:@"autoLatitude"] lastObject] stringValue] doubleValue];
                     double lon = [[[[node elementsForName:@"autoLongitude"] lastObject] stringValue] doubleValue];
+                    NSString *charge = [[[node elementsForName:@"autoAkkuLadeStandProzent"] lastObject] stringValue];
                     NSString *name = [[[node elementsForName:@"autoKennz"] lastObject] stringValue];
                     if (lat == 0 || lon == 0)
                         continue;
                     
-                    MQMulticityCar *car = [[MQMulticityCar alloc] initWithCoordinate:CLLocationCoordinate2DMake(lat, lon) name:name];
+                    MQMulticityCar *car = [[MQMulticityCar alloc] initWithCoordinate:CLLocationCoordinate2DMake(lat, lon) name:[NSString stringWithFormat:@"%@ (%@%%)", name, charge]];
                     [cars addObject:car];
                 }
                 
