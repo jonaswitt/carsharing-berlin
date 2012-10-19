@@ -29,8 +29,8 @@
     
     NSDictionary *parameters = @{
     @"proc" : @"buchanfrage_erg",
-    @"geo_latitude" : @"52.4849",
-    @"geo_longitude" : @"13.3642",
+    @"geo_latitude" : [NSString stringWithFormat:@"%f", center.coordinate.latitude],
+    @"geo_longitude" : [NSString stringWithFormat:@"%f", center.coordinate.longitude],
     @"instant_access" : @"J",
     @"open_end" : @"J",
     @"station_id" : @"egal",
