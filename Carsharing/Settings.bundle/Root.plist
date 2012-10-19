@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Car Sharing Services</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>car2go</string>
+            <key>Key</key>
+            <string>MQProviderCar2goEnabled</string>
+            <key>DefaultValue</key>
+            <true/>
+		</dict>
+        <dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>DriveNow</string>
+            <key>Key</key>
+            <string>MQProviderDrivenowEnabled</string>
+            <key>DefaultValue</key>
+            <true/>
+		</dict>
+        <dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Multicity</string>
+            <key>Key</key>
+            <string>MQProviderMulticityEnabled</string>
+            <key>DefaultValue</key>
+            <true/>
+		</dict>
+	</array>
+</dict>
+</plist>

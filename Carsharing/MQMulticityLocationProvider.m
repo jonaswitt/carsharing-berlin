@@ -81,4 +81,9 @@
     return YES;
 }
 
+- (BOOL)enabled
+{
+    return [[NSUserDefaults standardUserDefaults] boolForKey:@"MQProviderMulticityEnabled"];
+}
+
 @end

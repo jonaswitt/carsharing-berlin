@@ -128,7 +128,9 @@
         if (self.annotationsDisplayed)
             [self.mapView removeAnnotations:provider.displayedCars];
         provider.displayedCars = nil;
-        
+
+        if (!provider.enabled)
+            continue;
         if (!center && provider.needsCenterLocation)
             continue;
         

@@ -44,4 +44,9 @@
     }];
 }
 
+- (BOOL)enabled
+{
+    return [[NSUserDefaults standardUserDefaults] boolForKey:@"MQProviderDrivenowEnabled"];
+}
+
 @end
