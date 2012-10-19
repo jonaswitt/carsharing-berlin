@@ -97,7 +97,7 @@
         if (self.annotationsDisplayed) 
             [self.mapView removeAnnotations:provider.displayedCars];
         provider.displayedCars = nil;
-        [provider refreshLocationsWithResultBlock:^(NSArray *cars) {
+        [provider refreshCarsWithResultBlock:^(NSArray *cars) {
             provider.displayedCars = cars;
             if (self.annotationsDisplayed) 
                 [self.mapView addAnnotations:cars];  

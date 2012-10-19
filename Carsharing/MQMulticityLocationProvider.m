@@ -13,8 +13,13 @@
 
 @implementation MQMulticityLocationProvider
 
-- (void)refreshLocationsWithResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock
+- (void)refreshCarsAroundLocation:(CLLocation *)center withResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock
 {
+    if (center == nil) {
+        errorBlock(nil);
+        return;
+    }
+    
     static AFHTTPClient *client = nil;
     if (!client) {
         client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"https://52000000.dbcarsharing-buchung.de/"]];

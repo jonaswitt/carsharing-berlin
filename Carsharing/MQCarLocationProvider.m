@@ -12,8 +12,12 @@
 
 @synthesize displayedCars=_displayedCars;
 
+- (void)refreshCarsWithResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock
+{
+    [self refreshCarsAroundLocation:nil withResultBlock:resultBlock errorBlock:errorBlock];
+}
 
-- (void)refreshLocationsWithResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock
+- (void)refreshCarsAroundLocation:(CLLocation *)center withResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock
 {
     
 }

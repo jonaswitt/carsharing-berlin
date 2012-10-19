@@ -14,7 +14,7 @@
 
 @implementation MQDriveNowLocationProvider
 
-- (void)refreshLocationsWithResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock
+- (void)refreshCarsAroundLocation:(CLLocation *)center withResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock
 {
     static AFHTTPClient *client = nil;
     if (!client) {

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 typedef void (^MQCarLocationProviderResultBlock)(NSArray *cars);
 typedef void (^MQCarLocationProviderErrorBlock)(NSError *error);
@@ -15,6 +16,7 @@ typedef void (^MQCarLocationProviderErrorBlock)(NSError *error);
 
 @property (nonatomic) NSArray *displayedCars;
 
-- (void)refreshLocationsWithResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock;
+- (void)refreshCarsWithResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock;
+- (void)refreshCarsAroundLocation:(CLLocation *)center withResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock;
 
 @end
