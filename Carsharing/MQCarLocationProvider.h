@@ -15,6 +15,7 @@ typedef void (^MQCarLocationProviderErrorBlock)(NSError *error);
 @interface MQCarLocationProvider : NSObject
 
 @property (nonatomic) NSArray *displayedCars;
+@property (nonatomic, readonly) BOOL needsCenterLocation;
 
 - (void)refreshCarsWithResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock;
 - (void)refreshCarsAroundLocation:(CLLocation *)center withResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock;

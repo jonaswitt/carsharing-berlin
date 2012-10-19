@@ -76,4 +76,9 @@
     }];
 }
 
+- (BOOL)needsCenterLocation
+{
+    return YES;
+}
+
 @end

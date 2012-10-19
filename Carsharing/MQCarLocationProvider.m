@@ -22,4 +22,9 @@
     
 }
 
+- (BOOL)needsCenterLocation
+{
+    return NO;
+}
+
 @end

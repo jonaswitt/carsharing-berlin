@@ -14,7 +14,13 @@
 #import "MQMulticityLocationProvider.h"
 #import "MQCarAnnotationView.h"
 
-@interface MQCarMapViewController ()
+@interface MQCarMapViewController () {
+    
+    BOOL initialLocationBasedUpdateStarted;
+    BOOL initialZoomedIn;
+    NSMutableArray *remainingProviders;
+    
+}
 
 @property (strong, nonatomic) NSArray *carProviders;
 @property (strong, nonatomic) NSDate *lastRefreshDate;
@@ -30,6 +36,7 @@
 @synthesize lastRefreshDate = _lastRefreshDate;
 @synthesize alertedCar = _alertedCar;
 @synthesize annotationsDisplayed=_annotationsDisplayed;
+@synthesize locationManager=_locationManager;
 
 - (void)viewDidLoad
 {
@@ -53,15 +60,21 @@
     self.statusLabel = nil;
 }
 
+- (CLLocationManager *)locationManager
+{
+    if (!_locationManager) {
+        _locationManager = [[CLLocationManager alloc] init];
+    }
+    return _locationManager;
+}
 
 - (IBAction)centerUserLocation:(id)sender
 {
     switch ([CLLocationManager authorizationStatus]) {
         case kCLAuthorizationStatusAuthorized:
         default: {
-            CLLocationManager *locationManager = [[CLLocationManager alloc] init];
-            if (locationManager.location)
-                [self.mapView setRegion:MKCoordinateRegionMakeWithDistance(locationManager.location.coordinate, 600, 600) animated:YES];
+            if (self.locationManager.location)
+                [self.mapView setRegion:MKCoordinateRegionMakeWithDistance(self.locationManager.location.coordinate, 600, 600) animated:YES];
             break;
         }
             
@@ -89,15 +102,39 @@
 
 - (IBAction)refresh:(id)sender
 {
-    self.statusLabel.text = NSLocalizedString(@"Updating…", @"");
+    [self refreshWithLocationStatus:MQAnyLocation];
+}
 
-    __block NSMutableArray *remainingProviders = [NSMutableArray arrayWithArray:self.carProviders];
+- (void)refreshWithLocationStatus:(MQLocationStatus)status
+{
+    if (!remainingProviders)
+        remainingProviders = [NSMutableArray array];
     __block BOOL displayedError = NO;
+    
+    CLLocation *center = nil;
+    MKCoordinateRegion region = MKCoordinateRegionForMapRect(self.mapView.visibleMapRect);
+    CLLocationDistance span = MIN(region.span.latitudeDelta, region.span.longitudeDelta * cos(region.center.latitude / 180.0 * M_PI)) * 111000;
+    if (span < 5000)
+        center = [[CLLocation alloc] initWithLatitude:region.center.latitude longitude:region.center.longitude];
+    if (center && (status & MQNoLocationOnly) == 0)
+        initialLocationBasedUpdateStarted = YES;
+    
     for (MQCarLocationProvider *provider in self.carProviders) {
-        if (self.annotationsDisplayed) 
+        if ((status & MQNoLocationOnly) && provider.needsCenterLocation)
+            continue;
+        if ((status & MQWithLocationOnly) && !provider.needsCenterLocation)
+            continue;
+     
+        if (self.annotationsDisplayed)
             [self.mapView removeAnnotations:provider.displayedCars];
         provider.displayedCars = nil;
-        [provider refreshCarsWithResultBlock:^(NSArray *cars) {
+        
+        if (!center && provider.needsCenterLocation)
+            continue;
+        
+        NSLog(@"Updating locations using %@ around center: %@", NSStringFromClass([provider class]), center);
+        [remainingProviders addObject:provider];
+        [provider refreshCarsAroundLocation:center withResultBlock:^(NSArray *cars) {
             provider.displayedCars = cars;
             if (self.annotationsDisplayed) 
                 [self.mapView addAnnotations:cars];  
@@ -117,6 +154,8 @@
                 self.lastRefreshDate = self.lastRefreshDate;
         }];
     }
+    if ([remainingProviders count] > 0)
+        self.statusLabel.text = NSLocalizedString(@"Updating…", @"");
 }
 
 - (void)setLastRefreshDate:(NSDate *)lastRefreshDate
@@ -135,9 +174,26 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-
-    [self refreshIfNeccessary];
+    
     [self centerUserLocation:nil];
+    [self refreshIfNeccessary];
+    
+    [self.locationManager startUpdatingLocation];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.locationManager stopUpdatingLocation];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionForMapRect(self.mapView.visibleMapRect);
+    CLLocationDistance span = MIN(region.span.latitudeDelta, region.span.longitudeDelta * cos(region.center.latitude / 180.0 * M_PI)) * 111000;
+    if (span > 2000 && !initialZoomedIn) {
+        initialZoomedIn = YES;
+        [self centerUserLocation:nil];
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -160,6 +216,11 @@
                 [self.mapView removeAnnotations:provider.displayedCars];
         }
         self.annotationsDisplayed = shouldDisplayAnnotations;
+    }
+    
+    CLLocationDistance span = MIN(region.span.latitudeDelta, region.span.longitudeDelta * cos(region.center.latitude / 180.0 * M_PI)) * 111000;
+    if (!initialLocationBasedUpdateStarted && span < 5000) {
+        [self refreshWithLocationStatus:MQWithLocationOnly];
     }
 }
 
