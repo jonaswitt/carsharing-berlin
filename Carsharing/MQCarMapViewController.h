@@ -18,10 +18,11 @@ typedef enum {
     MQWithLocationOnly = 2,
 } MQLocationStatus;
 
-@interface MQCarMapViewController : UIViewController <MKMapViewDelegate, UIAlertViewDelegate, CLLocationManagerDelegate>
+@interface MQCarMapViewController : UIViewController <MKMapViewDelegate, UIAlertViewDelegate, CLLocationManagerDelegate, UIToolbarDelegate>
 
 @property (nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic) IBOutlet UILabel *statusLabel;
+@property (nonatomic) IBOutlet UIToolbar *toolbar;
 @property (nonatomic) MQCar *alertedCar;
 @property (nonatomic, readonly) BOOL annotationsDisplayed;
 @property (nonatomic, readonly) CLLocationManager *locationManager;
