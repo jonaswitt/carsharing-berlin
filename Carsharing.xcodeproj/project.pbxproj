@@ -605,6 +605,11 @@
 				CLASSPREFIX = MQ;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = metaquark;
+				TargetAttributes = {
+					7852C0A015346CCC007A8609 = {
+						DevelopmentTeam = 46XV9BGN2Y;
+					};
+				};
 			};
 			buildConfigurationList = 7852C09B15346CCC007A8609 /* Build configuration list for PBXProject "Carsharing" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -824,6 +829,7 @@
 				INFOPLIST_FILE = "Carsharing/Carsharing-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/AFNetworking\"";
 				WRAPPER_EXTENSION = app;
@@ -845,6 +851,7 @@
 				INFOPLIST_FILE = "Carsharing/Carsharing-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/AFNetworking\"";
 				WRAPPER_EXTENSION = app;
