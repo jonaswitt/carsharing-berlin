@@ -7,7 +7,7 @@
 //
 
 #import "MQCarMapViewController.h"
-#import "SBJson.h"
+#import <SBJson/SBJson4.h>
 #import "MQDriveNowCar.h"
 #import "MQCar2GoLocationProvider.h"
 #import "MQDriveNowLocationProvider.h"

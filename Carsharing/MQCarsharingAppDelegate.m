@@ -10,7 +10,7 @@
 
 #import "MQCarMapViewController.h"
 
-#import "CrashReporter.h"
+#import <PLCrashReporter/PLCrashReporter.h>
 
 @implementation MQCarsharingAppDelegate
 

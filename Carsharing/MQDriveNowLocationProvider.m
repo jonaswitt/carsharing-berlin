@@ -7,10 +7,10 @@
 //
 
 #import "MQDriveNowLocationProvider.h"
-#import "SBJson.h"
+#import <SBJson/SBJson4.h>
 #import "MQDriveNowCar.h"
-#import "AFNetworking.h"
-#import "AFJSONUtilities.h"
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/AFJSONUtilities.h>
 
 @implementation MQDriveNowLocationProvider
 

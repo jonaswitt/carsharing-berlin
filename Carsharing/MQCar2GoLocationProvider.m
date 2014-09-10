@@ -7,10 +7,10 @@
 //
 
 #import "MQCar2GoLocationProvider.h"
-#import "SBJson.h"
+#import <SBJson/SBJson4.h>
 #import "MQCar2GoCar.h"
-#import "AFNetworking.h"
-#import "AFJSONUtilities.h"
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/AFJSONUtilities.h>
 
 @implementation MQCar2GoLocationProvider
 
