@@ -100,7 +100,6 @@
 		7852C11B153471E7007A8609 /* MQDriveNowCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQDriveNowCar.m; sourceTree = "<group>"; };
 		7852C11D1534730B007A8609 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7852C11F15347318007A8609 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		7855D5D31562CEA0000BCCDB /* Carsharing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Carsharing.entitlements; sourceTree = "<group>"; };
 		7860F14215BF00DA00128625 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7860F14515BF010000128625 /* MQCarMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQCarMapViewController.xib; sourceTree = "<group>"; };
 		7860F14815BF011D00128625 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -208,7 +207,6 @@
 		7852C0AC15346CCC007A8609 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7855D5D31562CEA0000BCCDB /* Carsharing.entitlements */,
 				780A4E87163180F3005DE591 /* Settings.bundle */,
 				782471DD15388FDB0024AAE5 /* Car2Go.png */,
 				782471DE15388FDB0024AAE5 /* Car2Go@2x.png */,
@@ -448,7 +446,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jonas Witt";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -470,10 +468,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/CrashReporter\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Carsharing/Carsharing-Prefix.pch";
 				INFOPLIST_FILE = "Carsharing/Carsharing-Info.plist";
@@ -481,7 +475,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/AFNetworking\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -492,11 +485,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = Carsharing/Carsharing.entitlements;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/CrashReporter\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Carsharing/Carsharing-Prefix.pch";
 				INFOPLIST_FILE = "Carsharing/Carsharing-Info.plist";
@@ -504,7 +492,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/AFNetworking\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
