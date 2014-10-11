@@ -73,6 +73,9 @@
 {
     if (!_locationManager) {
         _locationManager = [[CLLocationManager alloc] init];
+        if ([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [_locationManager requestWhenInUseAuthorization];
+        }
     }
     return _locationManager;
 }
