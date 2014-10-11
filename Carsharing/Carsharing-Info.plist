@@ -30,6 +30,8 @@
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app uses your location to determine where to search for vehicles.</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array/>
 	<key>UISupportedInterfaceOrientations</key>

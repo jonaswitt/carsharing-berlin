@@ -43,7 +43,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [self.toolbar setDelegate:self];
     [self.mapView setRegion:MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2DMake(52.517, 13.405), 15000, 15000)];
     
     self.carProviders = [NSArray arrayWithObjects:

@@ -20,11 +20,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[MQCarMapViewController alloc] initWithNibName:@"MQCarMapViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
     
 #if !TARGET_IPHONE_SIMULATOR
 	PLCrashReporter *crashReporter = [PLCrashReporter sharedReporter];

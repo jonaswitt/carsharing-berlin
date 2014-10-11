@@ -44,10 +44,10 @@
 		7852C11E1534730B007A8609 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C11D1534730B007A8609 /* MapKit.framework */; };
 		7852C12015347318007A8609 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C11F15347318007A8609 /* CoreLocation.framework */; };
 		7860F14115BF00DA00128625 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7860F14315BF00DA00128625 /* Localizable.strings */; };
-		7860F14715BF010000128625 /* MQCarMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7860F14515BF010000128625 /* MQCarMapViewController.xib */; };
 		788AE58115A5F1E300320E60 /* Cars.png in Resources */ = {isa = PBXBuildFile; fileRef = 788AE57F15A5F1E300320E60 /* Cars.png */; };
 		788AE58215A5F1E300320E60 /* Cars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 788AE58015A5F1E300320E60 /* Cars@2x.png */; };
 		788AE59115A6E88C00320E60 /* MQCarAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE59015A6E88C00320E60 /* MQCarAnnotationView.m */; };
+		78DA797219E9893C007B5832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78DA797019E98807007B5832 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,13 +101,13 @@
 		7852C11D1534730B007A8609 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7852C11F15347318007A8609 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7860F14215BF00DA00128625 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		7860F14515BF010000128625 /* MQCarMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQCarMapViewController.xib; sourceTree = "<group>"; };
 		7860F14815BF011D00128625 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7860F14915BF011D00128625 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		788AE57F15A5F1E300320E60 /* Cars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cars.png; sourceTree = "<group>"; };
 		788AE58015A5F1E300320E60 /* Cars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cars@2x.png"; sourceTree = "<group>"; };
 		788AE58F15A6E88C00320E60 /* MQCarAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQCarAnnotationView.h; sourceTree = "<group>"; };
 		788AE59015A6E88C00320E60 /* MQCarAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQCarAnnotationView.m; sourceTree = "<group>"; };
+		78DA797019E98807007B5832 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B1C94806C66546B4BB31AD98 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -197,7 +197,7 @@
 				7852C0B815346CCC007A8609 /* MQCarMapViewController.m */,
 				788AE58F15A6E88C00320E60 /* MQCarAnnotationView.h */,
 				788AE59015A6E88C00320E60 /* MQCarAnnotationView.m */,
-				7860F14515BF010000128625 /* MQCarMapViewController.xib */,
+				78DA797019E98807007B5832 /* Main.storyboard */,
 				7852C0AC15346CCC007A8609 /* Supporting Files */,
 				78331F5C186CA11700DE677F /* Images.xcassets */,
 			);
@@ -309,6 +309,7 @@
 				782471E31538907A0024AAE5 /* DriveNow.png in Resources */,
 				782471E41538907A0024AAE5 /* DriveNow@2x.png in Resources */,
 				782471E7153893780024AAE5 /* DriveNow1er.png in Resources */,
+				78DA797219E9893C007B5832 /* Main.storyboard in Resources */,
 				782471E8153893780024AAE5 /* DriveNow1er@2x.png in Resources */,
 				782773F9154AA48500397B16 /* Location.png in Resources */,
 				782773FA154AA48500397B16 /* Location@2x.png in Resources */,
@@ -316,7 +317,6 @@
 				788AE58115A5F1E300320E60 /* Cars.png in Resources */,
 				788AE58215A5F1E300320E60 /* Cars@2x.png in Resources */,
 				7860F14115BF00DA00128625 /* Localizable.strings in Resources */,
-				7860F14715BF010000128625 /* MQCarMapViewController.xib in Resources */,
 				780A51801628132B008940D6 /* Multicity.png in Resources */,
 				780A51811628132B008940D6 /* Multicity@2x.png in Resources */,
 				780A4E88163180F3005DE591 /* Settings.bundle in Resources */,
