@@ -16,7 +16,7 @@
 {
     [super initialize];
     
-    [[NSUserDefaults standardUserDefaults] registerDefaults:@{ @"MQProviderCar2goEnabled" : @(TRUE), @"MQProviderDrivenowEnabled" : @(TRUE), @"MQProviderMulticityEnabled" : @(TRUE) }];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{ @"MQProviderCar2goEnabled" : @(TRUE), @"MQProviderDrivenowEnabled" : @(TRUE), @"MQProviderMulticityEnabled" : @(TRUE), @"MQProviderSpotcarEnabled": @(TRUE) }];
 }
 
 - (void)refreshCarsWithResultBlock:(MQCarLocationProviderResultBlock)resultBlock errorBlock:(MQCarLocationProviderErrorBlock)errorBlock
