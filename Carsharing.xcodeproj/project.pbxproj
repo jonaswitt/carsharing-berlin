@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5FC570A6CA7F4FFDAAC9F8EB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C94806C66546B4BB31AD98 /* libPods.a */; };
+		7804F89F1A0F7648004003F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7804F89D1A0F745B004003F0 /* LaunchScreen.storyboard */; };
+		7804F8A61A0F9CC5004003F0 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804F8A21A0F9CC5004003F0 /* footer.png */; };
+		7804F8A71A0F9CC5004003F0 /* footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804F8A31A0F9CC5004003F0 /* footer@2x.png */; };
+		7804F8AA1A0FA16C004003F0 /* berlin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804F8A81A0FA16C004003F0 /* berlin.png */; };
+		7804F8AB1A0FA16C004003F0 /* berlin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804F8A91A0FA16C004003F0 /* berlin@2x.png */; };
 		780A4E88163180F3005DE591 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 780A4E87163180F3005DE591 /* Settings.bundle */; };
 		780A5130162808BC008940D6 /* MQMulticityLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A512F162808BC008940D6 /* MQMulticityLocationProvider.m */; };
 		780A513616280B2A008940D6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 780A513516280B2A008940D6 /* libxml2.dylib */; };
@@ -52,6 +57,11 @@
 
 /* Begin PBXFileReference section */
 		52499E477E5C432097206BBB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		7804F89D1A0F745B004003F0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7804F8A21A0F9CC5004003F0 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
+		7804F8A31A0F9CC5004003F0 /* footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer@2x.png"; sourceTree = "<group>"; };
+		7804F8A81A0FA16C004003F0 /* berlin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = berlin.png; sourceTree = "<group>"; };
+		7804F8A91A0FA16C004003F0 /* berlin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "berlin@2x.png"; sourceTree = "<group>"; };
 		780A4E87163180F3005DE591 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		780A512E162808BC008940D6 /* MQMulticityLocationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQMulticityLocationProvider.h; sourceTree = "<group>"; };
 		780A512F162808BC008940D6 /* MQMulticityLocationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQMulticityLocationProvider.m; sourceTree = "<group>"; };
@@ -198,6 +208,7 @@
 				788AE58F15A6E88C00320E60 /* MQCarAnnotationView.h */,
 				788AE59015A6E88C00320E60 /* MQCarAnnotationView.m */,
 				78DA797019E98807007B5832 /* Main.storyboard */,
+				7804F89D1A0F745B004003F0 /* LaunchScreen.storyboard */,
 				7852C0AC15346CCC007A8609 /* Supporting Files */,
 				78331F5C186CA11700DE677F /* Images.xcassets */,
 			);
@@ -220,6 +231,10 @@
 				780A517F1628132B008940D6 /* Multicity@2x.png */,
 				782773F7154AA48500397B16 /* Location.png */,
 				782773F8154AA48500397B16 /* Location@2x.png */,
+				7804F8A81A0FA16C004003F0 /* berlin.png */,
+				7804F8A91A0FA16C004003F0 /* berlin@2x.png */,
+				7804F8A21A0F9CC5004003F0 /* footer.png */,
+				7804F8A31A0F9CC5004003F0 /* footer@2x.png */,
 				7852C0AD15346CCC007A8609 /* Carsharing-Info.plist */,
 				7852C0AE15346CCC007A8609 /* InfoPlist.strings */,
 				7852C0B115346CCC007A8609 /* main.m */,
@@ -305,18 +320,23 @@
 			files = (
 				7852C0B015346CCC007A8609 /* InfoPlist.strings in Resources */,
 				782471DF15388FDB0024AAE5 /* Car2Go.png in Resources */,
+				7804F8AA1A0FA16C004003F0 /* berlin.png in Resources */,
 				782471E015388FDB0024AAE5 /* Car2Go@2x.png in Resources */,
 				782471E31538907A0024AAE5 /* DriveNow.png in Resources */,
 				782471E41538907A0024AAE5 /* DriveNow@2x.png in Resources */,
 				782471E7153893780024AAE5 /* DriveNow1er.png in Resources */,
 				78DA797219E9893C007B5832 /* Main.storyboard in Resources */,
+				7804F8AB1A0FA16C004003F0 /* berlin@2x.png in Resources */,
 				782471E8153893780024AAE5 /* DriveNow1er@2x.png in Resources */,
 				782773F9154AA48500397B16 /* Location.png in Resources */,
+				7804F89F1A0F7648004003F0 /* LaunchScreen.storyboard in Resources */,
 				782773FA154AA48500397B16 /* Location@2x.png in Resources */,
+				7804F8A61A0F9CC5004003F0 /* footer.png in Resources */,
 				78331F5D186CA11700DE677F /* Images.xcassets in Resources */,
 				788AE58115A5F1E300320E60 /* Cars.png in Resources */,
 				788AE58215A5F1E300320E60 /* Cars@2x.png in Resources */,
 				7860F14115BF00DA00128625 /* Localizable.strings in Resources */,
+				7804F8A71A0F9CC5004003F0 /* footer@2x.png in Resources */,
 				780A51801628132B008940D6 /* Multicity.png in Resources */,
 				780A51811628132B008940D6 /* Multicity@2x.png in Resources */,
 				780A4E88163180F3005DE591 /* Settings.bundle in Resources */,

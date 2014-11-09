@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G2c-rF-49j">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GH6-xe-tlE">
+            <objects>
+                <viewController id="G2c-rF-49j" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RTM-ls-pcm"/>
+                        <viewControllerLayoutGuide type="bottom" id="KB5-mj-Onp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sAd-RV-bYR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="footer.png" translatesAutoresizingMaskIntoConstraints="NO" id="BIF-0k-BeR">
+                                <rect key="frame" x="135" y="433" width="330" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="berlin.png" translatesAutoresizingMaskIntoConstraints="NO" id="VSz-v3-Xl1">
+                                <rect key="frame" x="271" y="174" width="59" height="58"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30t-O8-CAw" userLabel="Car Sharing Berlin ist keine  offizielle Anwendung  (aber großer Freund) von">
+                                <rect key="frame" x="185" y="369" width="231" height="119"/>
+                                <string key="text">Car Sharing Berlin ist keine 
+offizielle Anwendung 
+(aber großer Freund) von</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" white="0.70000000000000007" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6s-Ge-NuX" userLabel="Car Sharing Berlin">
+                                <rect key="frame" x="185" y="218" width="231" height="119"/>
+                                <string key="text">Car Sharing
+Berlin</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="0.69999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.94000000000000006" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="BIF-0k-BeR" secondAttribute="centerX" id="9jp-Rn-Ksr"/>
+                            <constraint firstItem="KB5-mj-Onp" firstAttribute="top" secondItem="30t-O8-CAw" secondAttribute="bottom" constant="112" id="CGI-QM-JyJ"/>
+                            <constraint firstAttribute="centerX" secondItem="P6s-Ge-NuX" secondAttribute="centerX" id="JFS-hT-rL2"/>
+                            <constraint firstItem="KB5-mj-Onp" firstAttribute="top" secondItem="BIF-0k-BeR" secondAttribute="bottom" constant="40" id="OoK-mL-Ryn"/>
+                            <constraint firstAttribute="centerX" secondItem="30t-O8-CAw" secondAttribute="centerX" constant="-0.5" id="TAJ-gn-KpB"/>
+                            <constraint firstAttribute="centerY" secondItem="P6s-Ge-NuX" secondAttribute="centerY" id="Uz4-m6-lq1"/>
+                            <constraint firstAttribute="centerX" secondItem="VSz-v3-Xl1" secondAttribute="centerX" id="W7y-fA-O6J"/>
+                            <constraint firstAttribute="centerY" secondItem="VSz-v3-Xl1" secondAttribute="centerY" constant="70" id="gwe-Qp-pnU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KhM-Sv-T0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="367"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="berlin.png" width="52" height="48"/>
+        <image name="footer.png" width="267" height="56"/>
+    </resources>
+</document>
