@@ -72,9 +72,11 @@
 {
     if (!_locationManager) {
         _locationManager = [[CLLocationManager alloc] init];
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
         if ([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
             [_locationManager requestWhenInUseAuthorization];
         }
+#endif
     }
     return _locationManager;
 }
