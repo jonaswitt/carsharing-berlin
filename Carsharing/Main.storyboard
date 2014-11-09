@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="XxU-Nb-2yQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="XxU-Nb-2yQ">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Car Map View Controller-->
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bmz-me-kkY">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <connections>
                                     <outlet property="delegate" destination="XxU-Nb-2yQ" id="Niq-j5-YLR"/>
                                 </connections>
@@ -69,13 +68,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xyM-lv-FiH" firstAttribute="leading" secondItem="kRF-U3-hDi" secondAttribute="leadingMargin" constant="-16" id="4lz-Wq-3Fs"/>
+                            <constraint firstItem="xyM-lv-FiH" firstAttribute="leading" secondItem="kRF-U3-hDi" secondAttribute="leading" id="4lz-Wq-3Fs"/>
                             <constraint firstItem="aLK-OG-qx5" firstAttribute="top" secondItem="Bmz-me-kkY" secondAttribute="bottom" id="8tw-V6-RCX"/>
-                            <constraint firstItem="Bmz-me-kkY" firstAttribute="top" secondItem="P3f-lP-1Bs" secondAttribute="bottom" constant="-20" id="Nva-X6-eFp"/>
-                            <constraint firstItem="Bmz-me-kkY" firstAttribute="leading" secondItem="kRF-U3-hDi" secondAttribute="leadingMargin" constant="-16" id="lhf-aO-yuM"/>
+                            <constraint firstItem="Bmz-me-kkY" firstAttribute="trailing" secondItem="kRF-U3-hDi" secondAttribute="trailing" id="MEf-QB-Ss7"/>
+                            <constraint firstItem="Bmz-me-kkY" firstAttribute="top" secondItem="P3f-lP-1Bs" secondAttribute="bottom" id="Nva-X6-eFp"/>
+                            <constraint firstItem="Bmz-me-kkY" firstAttribute="leading" secondItem="kRF-U3-hDi" secondAttribute="leading" id="lhf-aO-yuM"/>
                             <constraint firstItem="xyM-lv-FiH" firstAttribute="top" secondItem="P3f-lP-1Bs" secondAttribute="bottom" id="mgY-wD-UXB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xyM-lv-FiH" secondAttribute="trailing" constant="-16" id="mnM-X4-wN0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Bmz-me-kkY" secondAttribute="trailing" constant="-16" id="tP0-2F-19r"/>
+                            <constraint firstItem="xyM-lv-FiH" firstAttribute="trailing" secondItem="kRF-U3-hDi" secondAttribute="trailing" id="qmc-13-YST"/>
                         </constraints>
                     </view>
                     <connections>
