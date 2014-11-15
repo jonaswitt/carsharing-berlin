@@ -38,6 +38,7 @@
 		782773F9154AA48500397B16 /* Location.png in Resources */ = {isa = PBXBuildFile; fileRef = 782773F7154AA48500397B16 /* Location.png */; };
 		782773FA154AA48500397B16 /* Location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 782773F8154AA48500397B16 /* Location@2x.png */; };
 		78331F5D186CA11700DE677F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78331F5C186CA11700DE677F /* Images.xcassets */; };
+		78436D631A17B3E6002FCFEE /* Carsharing_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78436D621A17B3E6002FCFEE /* Carsharing_Tests.m */; };
 		7852C0A615346CCC007A8609 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0A515346CCC007A8609 /* UIKit.framework */; };
 		7852C0A815346CCC007A8609 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0A715346CCC007A8609 /* Foundation.framework */; };
 		7852C0AA15346CCC007A8609 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7852C0A915346CCC007A8609 /* CoreGraphics.framework */; };
@@ -59,6 +60,16 @@
 		788AE59115A6E88C00320E60 /* MQCarAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 788AE59015A6E88C00320E60 /* MQCarAnnotationView.m */; };
 		78DA797219E9893C007B5832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78DA797019E98807007B5832 /* Main.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78436D641A17B3E6002FCFEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7852C09815346CCC007A8609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7852C0A015346CCC007A8609;
+			remoteInfo = Carsharing;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		49374356700AD5E2034E136F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +111,9 @@
 		782773F7154AA48500397B16 /* Location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Location.png; sourceTree = "<group>"; };
 		782773F8154AA48500397B16 /* Location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Location@2x.png"; sourceTree = "<group>"; };
 		78331F5C186CA11700DE677F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		78436D5E1A17B3E6002FCFEE /* Carsharing Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carsharing Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78436D611A17B3E6002FCFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78436D621A17B3E6002FCFEE /* Carsharing_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Carsharing_Tests.m; sourceTree = "<group>"; };
 		7852C0A115346CCC007A8609 /* Carsharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carsharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7852C0A515346CCC007A8609 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7852C0A715346CCC007A8609 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +149,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		78436D5B1A17B3E6002FCFEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7852C09E15346CCC007A8609 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -174,10 +195,28 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		78436D5F1A17B3E6002FCFEE /* Carsharing Tests */ = {
+			isa = PBXGroup;
+			children = (
+				78436D621A17B3E6002FCFEE /* Carsharing_Tests.m */,
+				78436D601A17B3E6002FCFEE /* Supporting Files */,
+			);
+			path = "Carsharing Tests";
+			sourceTree = "<group>";
+		};
+		78436D601A17B3E6002FCFEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78436D611A17B3E6002FCFEE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7852C09615346CCC007A8609 = {
 			isa = PBXGroup;
 			children = (
 				7852C0AB15346CCC007A8609 /* Carsharing */,
+				78436D5F1A17B3E6002FCFEE /* Carsharing Tests */,
 				7852C0A415346CCC007A8609 /* Frameworks */,
 				7852C0A215346CCC007A8609 /* Products */,
 				8FACF1D44C37AD933504043E /* Pods */,
@@ -188,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				7852C0A115346CCC007A8609 /* Carsharing.app */,
+				78436D5E1A17B3E6002FCFEE /* Carsharing Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -291,6 +331,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		78436D5D1A17B3E6002FCFEE /* Carsharing Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78436D661A17B3E6002FCFEE /* Build configuration list for PBXNativeTarget "Carsharing Tests" */;
+			buildPhases = (
+				78436D5A1A17B3E6002FCFEE /* Sources */,
+				78436D5B1A17B3E6002FCFEE /* Frameworks */,
+				78436D5C1A17B3E6002FCFEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78436D651A17B3E6002FCFEE /* PBXTargetDependency */,
+			);
+			name = "Carsharing Tests";
+			productName = "Carsharing Tests";
+			productReference = 78436D5E1A17B3E6002FCFEE /* Carsharing Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7852C0A015346CCC007A8609 /* Carsharing */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7852C0BF15346CCC007A8609 /* Build configuration list for PBXNativeTarget "Carsharing" */;
@@ -320,6 +378,10 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = metaquark;
 				TargetAttributes = {
+					78436D5D1A17B3E6002FCFEE = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 7852C0A015346CCC007A8609;
+					};
 					7852C0A015346CCC007A8609 = {
 						DevelopmentTeam = 46XV9BGN2Y;
 					};
@@ -338,11 +400,19 @@
 			projectRoot = "";
 			targets = (
 				7852C0A015346CCC007A8609 /* Carsharing */,
+				78436D5D1A17B3E6002FCFEE /* Carsharing Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		78436D5C1A17B3E6002FCFEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7852C09F15346CCC007A8609 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,6 +481,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		78436D5A1A17B3E6002FCFEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78436D631A17B3E6002FCFEE /* Carsharing_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7852C09D15346CCC007A8609 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,6 +512,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		78436D651A17B3E6002FCFEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7852C0A015346CCC007A8609 /* Carsharing */;
+			targetProxy = 78436D641A17B3E6002FCFEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		7852C0AE15346CCC007A8609 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -456,6 +542,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		78436D671A17B3E6002FCFEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Carsharing Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carsharing.app/Carsharing";
+			};
+			name = Debug;
+		};
+		78436D681A17B3E6002FCFEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Carsharing Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carsharing.app/Carsharing";
+			};
+			name = Release;
+		};
 		7852C0BD15346CCC007A8609 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,6 +628,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "77931bb2-70c2-4084-a1d4-1e3418bb1a21";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -511,6 +655,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "77931bb2-70c2-4084-a1d4-1e3418bb1a21";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -522,6 +667,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Carsharing/Carsharing-Prefix.pch";
 				INFOPLIST_FILE = "Carsharing/Carsharing-Info.plist";
@@ -539,6 +686,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Carsharing/Carsharing-Prefix.pch";
 				INFOPLIST_FILE = "Carsharing/Carsharing-Info.plist";
@@ -553,6 +702,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		78436D661A17B3E6002FCFEE /* Build configuration list for PBXNativeTarget "Carsharing Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78436D671A17B3E6002FCFEE /* Debug */,
+				78436D681A17B3E6002FCFEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7852C09B15346CCC007A8609 /* Build configuration list for PBXProject "Carsharing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
