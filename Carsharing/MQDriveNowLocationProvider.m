@@ -18,7 +18,7 @@
 {
     static AFHTTPClient *client = nil;
     if (!client) {
-        client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"https://m.drive-now.com/php/metropolis/"]];
+        client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"https://www.drive-now.com/php/metropolis/"]];
     }
     
     NSString *path = @"json.vehicle_filter";
