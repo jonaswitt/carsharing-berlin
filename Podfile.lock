@@ -1,5 +1,6 @@
 PODS:
   - AFNetworking (0.10.1)
+  - Geo-Utilities (0.0.1)
   - PLCrashReporter (1.2-rc5)
   - Reachability (3.1.1)
   - SBJson (4.0.1)
@@ -7,6 +8,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 0.10.1)
+  - Geo-Utilities
   - PLCrashReporter (~> 1.2-rc5)
   - Reachability (~> 3.1.1)
   - SBJson (~> 4.0.1)
@@ -14,6 +16,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: e4f53a4734a39d58809cb19a71b4cbcc3eb60176
+  Geo-Utilities: e4bcc9c221b2275c052429f1e3727dc697ca70c2
   PLCrashReporter: 979cd3c5bda33655f4df58fa6219d067183d7a7e
   Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
   SBJson: d71212c078abf4679d54b0d0565260c474e46235

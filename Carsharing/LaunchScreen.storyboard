@@ -61,6 +61,6 @@ Berlin</string>
     </scenes>
     <resources>
         <image name="berlin.png" width="52" height="48"/>
-        <image name="footer.png" width="267" height="56"/>
+        <image name="footer.png" width="192" height="70"/>
     </resources>
 </document>

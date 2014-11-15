@@ -13,6 +13,11 @@
 		7804F8A71A0F9CC5004003F0 /* footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804F8A31A0F9CC5004003F0 /* footer@2x.png */; };
 		7804F8AA1A0FA16C004003F0 /* berlin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804F8A81A0FA16C004003F0 /* berlin.png */; };
 		7804F8AB1A0FA16C004003F0 /* berlin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804F8A91A0FA16C004003F0 /* berlin@2x.png */; };
+		7804F8AE1A0FA807004003F0 /* MQSpotcarLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7804F8AD1A0FA807004003F0 /* MQSpotcarLocationProvider.m */; };
+		7804F8B11A0FAB3C004003F0 /* MQSpotCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7804F8B01A0FAB3C004003F0 /* MQSpotCar.m */; };
+		7804F8BB1A0FB0F5004003F0 /* Spotcar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804F8B81A0FB0F5004003F0 /* Spotcar.png */; };
+		7804F8BC1A0FB0F5004003F0 /* Spotcar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804F8B91A0FB0F5004003F0 /* Spotcar@2x.png */; };
+		7804F8BD1A0FB0F5004003F0 /* Spotcar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804F8BA1A0FB0F5004003F0 /* Spotcar@3x.png */; };
 		780A4E88163180F3005DE591 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 780A4E87163180F3005DE591 /* Settings.bundle */; };
 		780A5130162808BC008940D6 /* MQMulticityLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 780A512F162808BC008940D6 /* MQMulticityLocationProvider.m */; };
 		780A513616280B2A008940D6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 780A513516280B2A008940D6 /* libxml2.dylib */; };
@@ -62,6 +67,13 @@
 		7804F8A31A0F9CC5004003F0 /* footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer@2x.png"; sourceTree = "<group>"; };
 		7804F8A81A0FA16C004003F0 /* berlin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = berlin.png; sourceTree = "<group>"; };
 		7804F8A91A0FA16C004003F0 /* berlin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "berlin@2x.png"; sourceTree = "<group>"; };
+		7804F8AC1A0FA807004003F0 /* MQSpotcarLocationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQSpotcarLocationProvider.h; sourceTree = "<group>"; };
+		7804F8AD1A0FA807004003F0 /* MQSpotcarLocationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQSpotcarLocationProvider.m; sourceTree = "<group>"; };
+		7804F8AF1A0FAB3C004003F0 /* MQSpotCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQSpotCar.h; sourceTree = "<group>"; };
+		7804F8B01A0FAB3C004003F0 /* MQSpotCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQSpotCar.m; sourceTree = "<group>"; };
+		7804F8B81A0FB0F5004003F0 /* Spotcar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spotcar.png; sourceTree = "<group>"; };
+		7804F8B91A0FB0F5004003F0 /* Spotcar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spotcar@2x.png"; sourceTree = "<group>"; };
+		7804F8BA1A0FB0F5004003F0 /* Spotcar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spotcar@3x.png"; sourceTree = "<group>"; };
 		780A4E87163180F3005DE591 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		780A512E162808BC008940D6 /* MQMulticityLocationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQMulticityLocationProvider.h; sourceTree = "<group>"; };
 		780A512F162808BC008940D6 /* MQMulticityLocationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQMulticityLocationProvider.m; sourceTree = "<group>"; };
@@ -150,6 +162,8 @@
 			children = (
 				782471CF153888EA0024AAE5 /* MQCarLocationProvider.h */,
 				782471D0153888EA0024AAE5 /* MQCarLocationProvider.m */,
+				7804F8AC1A0FA807004003F0 /* MQSpotcarLocationProvider.h */,
+				7804F8AD1A0FA807004003F0 /* MQSpotcarLocationProvider.m */,
 				782471D2153888FB0024AAE5 /* MQCar2GoLocationProvider.h */,
 				782471D3153888FC0024AAE5 /* MQCar2GoLocationProvider.m */,
 				782471D815388CA50024AAE5 /* MQDriveNowLocationProvider.h */,
@@ -230,6 +244,9 @@
 				782471E6153893780024AAE5 /* DriveNow1er@2x.png */,
 				780A517E1628132B008940D6 /* Multicity.png */,
 				780A517F1628132B008940D6 /* Multicity@2x.png */,
+				7804F8B81A0FB0F5004003F0 /* Spotcar.png */,
+				7804F8B91A0FB0F5004003F0 /* Spotcar@2x.png */,
+				7804F8BA1A0FB0F5004003F0 /* Spotcar@3x.png */,
 				782773F7154AA48500397B16 /* Location.png */,
 				782773F8154AA48500397B16 /* Location@2x.png */,
 				7804F8A81A0FA16C004003F0 /* berlin.png */,
@@ -250,6 +267,8 @@
 			children = (
 				7852C117153471A6007A8609 /* MQCar.h */,
 				7852C118153471A6007A8609 /* MQCar.m */,
+				7804F8AF1A0FAB3C004003F0 /* MQSpotCar.h */,
+				7804F8B01A0FAB3C004003F0 /* MQSpotCar.m */,
 				7852C11A153471E7007A8609 /* MQDriveNowCar.h */,
 				7852C11B153471E7007A8609 /* MQDriveNowCar.m */,
 				782471D515388A5F0024AAE5 /* MQCar2GoCar.h */,
@@ -330,10 +349,12 @@
 			files = (
 				7852C0B015346CCC007A8609 /* InfoPlist.strings in Resources */,
 				782471DF15388FDB0024AAE5 /* Car2Go.png in Resources */,
+				7804F8BB1A0FB0F5004003F0 /* Spotcar.png in Resources */,
 				7804F8AA1A0FA16C004003F0 /* berlin.png in Resources */,
 				782471E015388FDB0024AAE5 /* Car2Go@2x.png in Resources */,
 				782471E31538907A0024AAE5 /* DriveNow.png in Resources */,
 				782471E41538907A0024AAE5 /* DriveNow@2x.png in Resources */,
+				7804F8BC1A0FB0F5004003F0 /* Spotcar@2x.png in Resources */,
 				782471E7153893780024AAE5 /* DriveNow1er.png in Resources */,
 				78DA797219E9893C007B5832 /* Main.storyboard in Resources */,
 				7804F8AB1A0FA16C004003F0 /* berlin@2x.png in Resources */,
@@ -348,6 +369,7 @@
 				7860F14115BF00DA00128625 /* Localizable.strings in Resources */,
 				7804F8A71A0F9CC5004003F0 /* footer@2x.png in Resources */,
 				780A51801628132B008940D6 /* Multicity.png in Resources */,
+				7804F8BD1A0FB0F5004003F0 /* Spotcar@3x.png in Resources */,
 				780A51811628132B008940D6 /* Multicity@2x.png in Resources */,
 				780A4E88163180F3005DE591 /* Settings.bundle in Resources */,
 			);
@@ -397,6 +419,7 @@
 				7852C0B615346CCC007A8609 /* MQCarsharingAppDelegate.m in Sources */,
 				7852C0B915346CCC007A8609 /* MQCarMapViewController.m in Sources */,
 				7852C119153471A6007A8609 /* MQCar.m in Sources */,
+				7804F8B11A0FAB3C004003F0 /* MQSpotCar.m in Sources */,
 				7852C11C153471E7007A8609 /* MQDriveNowCar.m in Sources */,
 				782471D1153888EA0024AAE5 /* MQCarLocationProvider.m in Sources */,
 				782471D4153888FC0024AAE5 /* MQCar2GoLocationProvider.m in Sources */,
@@ -405,6 +428,7 @@
 				788AE59115A6E88C00320E60 /* MQCarAnnotationView.m in Sources */,
 				780A5130162808BC008940D6 /* MQMulticityLocationProvider.m in Sources */,
 				780A517D1628107C008940D6 /* MQMulticityCar.m in Sources */,
+				7804F8AE1A0FA807004003F0 /* MQSpotcarLocationProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

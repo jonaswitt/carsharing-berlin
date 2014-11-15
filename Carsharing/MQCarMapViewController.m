@@ -12,6 +12,7 @@
 #import "MQCar2GoLocationProvider.h"
 #import "MQDriveNowLocationProvider.h"
 #import "MQMulticityLocationProvider.h"
+#import "MQSpotcarLocationProvider.h"
 #import "MQCarAnnotationView.h"
 
 @interface MQCarMapViewController () {
@@ -49,6 +50,7 @@
                          [[MQCar2GoLocationProvider alloc] init], 
                          [[MQDriveNowLocationProvider alloc] init],
                          [[MQMulticityLocationProvider alloc] init],
+                         [[MQSpotcarLocationProvider alloc] init],
                          nil];
 }
 
