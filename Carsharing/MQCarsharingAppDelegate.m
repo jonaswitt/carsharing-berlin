@@ -10,7 +10,7 @@
 
 #import "MQCarMapViewController.h"
 
-#import <PLCrashReporter/PLCrashReporter.h>
+#import <HockeySDK/HockeySDK.h>
 
 @implementation MQCarsharingAppDelegate
 
@@ -20,19 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-#if !TARGET_IPHONE_SIMULATOR
-	PLCrashReporter *crashReporter = [PLCrashReporter sharedReporter];
-	NSError *error;
-	
-	// Check if we previously crashed
-	if ([crashReporter hasPendingCrashReport])
-		[self handleCrashReport];
-    
-	// Enable the Crash Reporter
-	if (![crashReporter enableCrashReporterAndReturnError: &error])
-		NSLog(@"Warning: Could not enable crash reporter: %@", error);
-#endif
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"733ab15e25ca4fe20e82ec050ab3d28d"];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
     
     return YES;
 }
@@ -63,31 +53,5 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
-#if !TARGET_IPHONE_SIMULATOR
-- (void)handleCrashReport
-{
-	PLCrashReporter *crashReporter = [PLCrashReporter sharedReporter];
-	NSData *crashData;
-	NSError *error;
-	
-	// Try loading the crash report
-	crashData = [crashReporter loadPendingCrashReportDataAndReturnError: &error];
-	if (crashData == nil) {
-		NSLog(@"Could not load crash report: %@", error);
-        [crashReporter purgePendingCrashReport];
-        return;
-	}
-    
-	NSMutableURLRequest *uploadRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://backend.metaquark.de/crashlogs/"]];
-	[uploadRequest setHTTPMethod:@"POST"];
-	[uploadRequest setHTTPBody:crashData];
-	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:uploadRequest delegate:nil];
-	
-	// Purge the report
-	[crashReporter purgePendingCrashReport];
-	return;
-}
-#endif
 
 @end
