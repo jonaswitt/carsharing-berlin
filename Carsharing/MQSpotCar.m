@@ -40,11 +40,6 @@
 
 - (BOOL)canLaunchApp
 {
-    return TRUE;
-}
-
-- (BOOL)launchApp
-{
     return NO;
 }
 
